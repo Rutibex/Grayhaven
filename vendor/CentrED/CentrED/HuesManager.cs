@@ -1,0 +1,105 @@
+﻿using System.Drawing;
+using System.Numerics;
+using System.Runtime.InteropServices;
+using Microsoft.Xna.Framework.Graphics;
+
+namespace CentrED;
+
+public class HuesManager
+{
+    private static HuesManager _instance;
+    public static HuesManager Instance => _instance;
+
+    public const int HUE_SIZE = 32;
+    public const int TEXTURE_WIDTH = 16 * HUE_SIZE; //16 hues of 32 values per row
+    public const int TEXTURE_HEIGHT = 1024; //That's enough to fit 16k textures
+    public readonly Texture2D Texture;
+    public readonly int HuesCount;
+    public readonly string[] Names;
+    // public readonly ushort[][] Colors;
+    public const float TRANSLUCENT_ALPHA = 178 / 255.0f;
+
+    private unsafe HuesManager(GraphicsDevice gd)
+    {
+        var huesLoader = Application.CEDGame.MapManager.UoFileManager.Hues;
+        HuesCount = huesLoader.HuesCount + 1;
+        Texture = new Texture2D(gd, TEXTURE_WIDTH, TEXTURE_HEIGHT);
+        uint[] buffer = System.Buffers.ArrayPool<uint>.Shared.Rent(TEXTURE_WIDTH * TEXTURE_HEIGHT);
+
+        fixed (uint* ptr = buffer)
+        {
+            huesLoader.CreateShaderColors(buffer);
+            Texture.SetDataPointerEXT(0, null, (IntPtr)ptr, TEXTURE_WIDTH * TEXTURE_HEIGHT * sizeof(uint));
+        }
+
+        System.Buffers.ArrayPool<uint>.Shared.Return(buffer);
+
+        // Colors = new ushort[HuesCount + 1][];
+        Names = new string[HuesCount + 1];
+        // Colors[0] = huesLoader.HuesRange[0].Entries[0].ColorTable;
+        Names[0] = "No Hue";
+        var i = 1;
+        foreach (var huesGroup in huesLoader.HuesRange)
+        {
+            foreach (var hueEntry in huesGroup.Entries)
+            {
+                // Colors[i] = hueEntry.ColorTable;
+                Names[i] = Marshal.PtrToStringUTF8((IntPtr)hueEntry.Name) ?? "Read Error";
+                i++;
+            }
+        }
+    }
+
+    public static void Load(GraphicsDevice gd)
+    {
+        _instance = new HuesManager(gd);
+    }
+
+    public enum HueMode
+    {
+        NONE = 0,
+        HUED = 1,
+        PARTIAL = 2,
+        LIGHT = 3,
+        RGB = 255
+    }
+
+    public float GetDefaultAlpha(ushort tileId)
+    {
+        return Application.CEDGame.MapManager.UoFileManager.TileData.StaticData[tileId].IsTranslucent ? TRANSLUCENT_ALPHA : 1.0f;
+    }
+
+    public Vector4 GetHueVector(ushort id, ushort hue)
+    {
+        var partial = Application.CEDGame.MapManager.UoFileManager.TileData.StaticData[id].IsPartialHue;
+        return GetHueVector(hue, partial, GetDefaultAlpha(id));
+    }
+
+    private Vector4 GetHueVector(ushort hue, bool partial, float alpha = 1)
+    {
+        HueMode mode;
+
+        if ((hue & 0x8000) != 0)
+        {
+            partial = true;
+            hue &= 0x7FFF;
+        }
+
+        if (hue != 0)
+        {
+            hue -= 1;
+            mode = partial ? HueMode.PARTIAL : HueMode.HUED;
+        }
+        else
+        {
+            mode = HueMode.NONE;
+        }
+
+        return new Vector4(hue, 0, alpha, (int)mode);
+    }
+
+    public Vector4 GetRGBVector(Color color)
+    {
+        return new Vector4(color.R / 255f, color.G / 255f, color.B / 255f, (int)HueMode.RGB);
+    }
+}

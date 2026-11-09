@@ -1,0 +1,58 @@
+[
+  {
+    "path": "vendor/ServUO/Scripts/Quests/BaseQuest.cs",
+    "sha256": "b55d678d82348ec920585ceabf354ae1b9656a2fd6c5f7f0c08a6abd28557bd3"
+  },
+  {
+    "path": "vendor/ServUO/Scripts/Services/MondainsLegacyQuests/QuestObjectives.cs",
+    "sha256": "2f734d580ad1f9303843ebf9b81230c422f14c7c7ebed0937356ca9ef48c986b"
+  },
+  {
+    "path": "vendor/ServUO/Scripts/Misc/SkillCheck.cs",
+    "sha256": "be5ee02469ae3ee25695ddd105bb33c98848b3faff0572431d32bb9575ccdba0"
+  },
+  {
+    "path": "vendor/ServUO/Server/Skills.cs",
+    "sha256": "0b9a4d175fc462e220140b21edf207ac4dc352084cb89669f49082116b54e80e"
+  },
+  {
+    "path": "vendor/ServUO/Config/PlayerCaps.cfg",
+    "sha256": "622ed7cd9ac282677da02ccc79c984694b5edfecd2c11ac418a0e71182480acc"
+  },
+  {
+    "path": "vendor/ServUO/Scripts/Mobiles/Normal/BaseCreature.cs",
+    "sha256": "6de77a2bfb7f7087193ea745f962d671485773ebd49fe340bbdca1038c751027"
+  },
+  {
+    "path": "vendor/ServUO/Scripts/Mobiles/NPCs/BaseVendor.cs",
+    "sha256": "634def38f3da28b5b0c2ab80b6f31a91fdedea4263c4dd870c20ac2b8ef41e0c"
+  },
+  {
+    "path": "vendor/ServUO/Scripts/Mobiles/AI/BaseAI.cs",
+    "sha256": "98685c95f4f709e7238722f7b4a73817119d1ff9ddea40bf6e83211ee75f30a3"
+  },
+  {
+    "path": "vendor/ServUO/Scripts/Items/Tools/Clocks.cs",
+    "sha256": "e8c57abee3d1bfca9b5a8551cea0a62bc31236a9cb7b4bedd7acb6e881d31cd8"
+  },
+  {
+    "path": "vendor/ServUO/Scripts/Items/Equipment/Weapons/BaseWeapon.cs",
+    "sha256": "d5f39516dda786347f5a6cd67f2d39938d603a236a24ac872793d428e9cf4bf9"
+  },
+  {
+    "path": "vendor/ServUO/Scripts/Spells/Base/MagerySpell.cs",
+    "sha256": "3c4cf2b509cb1648dc95b115354c4263ac93c7eb3c6f4b3a9f720bf95c42ffa3"
+  },
+  {
+    "path": "vendor/ServUO/Scripts/Skills/Meditation.cs",
+    "sha256": "2d0bc26259d8ce0b1a203001f4454f5bd1c1c4dc510e1091fb09e7d6d7ad6ed5"
+  },
+  {
+    "path": "vendor/ServUO/Scripts/Items/Resource/Bandage.cs",
+    "sha256": "f0549ca21f4ffb8f242addd1b81558999d475ac725bfbdf530e6e64ac6920092"
+  },
+  {
+    "path": "vendor/ServUO/Scripts/Misc/Titles.cs",
+    "sha256": "d5002552db2e20b617b1392613384d6bacc4e87a2b464eea5b2bcf0e85958a3c"
+  }
+]

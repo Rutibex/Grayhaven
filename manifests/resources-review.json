@@ -1,0 +1,462 @@
+[
+  {
+    "path": "vendor/ServUO/zlibwapi32.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "5daaaf040f038f5b77d6ed33c031f3851604cb1dab89b074ff92893b3a60d3fc"
+  },
+  {
+    "path": "vendor/ServUO/zlibwapi64.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "fcf9f36b66fd053e4bfe4c599d5bd37bc66d6891a7af8616079786b942f316f3"
+  },
+  {
+    "path": "vendor/CentrED/CentrED/icon.ico",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "4d9a2d44f524ef8177d088a61857fe90fed3a02ba7200f3d1460172d46795c71"
+  },
+  {
+    "path": "vendor/CentrED/CentrED/background.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "002ef760e4f53dbd218c2ac3e75c687969441d5347e04077b1cd2a7e5cdf8304"
+  },
+  {
+    "path": "vendor/CentrED/CentrED/roboto.ttf",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "4e147ab64b9fdf6d89d01f6b8c3ca0b3cddc59d608a8e2218f9a2504b5c98e14"
+  },
+  {
+    "path": "vendor/CentrED/lib/lib64/tinyfiledialogs.so",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "3362c6b23e8be486fd4609d4c2f4c863896a6d41d50be793c62b6693ad6752f2"
+  },
+  {
+    "path": "vendor/CentrED/lib/dotnet/ClassicUO.IO.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "155d879f16d228823092e99539c6feb95eb33d95a0d073d694f7afd818b79c19"
+  },
+  {
+    "path": "vendor/CentrED/lib/dotnet/zlib.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "fcf9f36b66fd053e4bfe4c599d5bd37bc66d6891a7af8616079786b942f316f3"
+  },
+  {
+    "path": "vendor/CentrED/lib/dotnet/ClassicUO.Utility.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "75fdfaeb62ee76cb585dd16d531327e9dd1c76dda120c231323749cb78173642"
+  },
+  {
+    "path": "vendor/CentrED/lib/dotnet/ClassicUO.Assets.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "56466326acba5fe9eb2959ed3bb8a2536291a17b4c3dfd1d135cb1e0f845715c"
+  },
+  {
+    "path": "vendor/CentrED/lib/dotnet/ClassicUO.Renderer.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "9b2bb6c56a8562c6892374fdd442f9fb227fa2fa42596ef6adb9e8d2788851cf"
+  },
+  {
+    "path": "vendor/CentrED/lib/osx/tinyfiledialogs.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "1b788b6a41ed05088ecbc5fc15dfa2c09432282d6afeb489bd2954bdbb198d82"
+  },
+  {
+    "path": "vendor/CentrED/lib/x64/tinyfiledialogs.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "c3ada5837749a61531a8932af8dacb96436831afbc4bd78580a77eec90e978b7"
+  },
+  {
+    "path": "vendor/CentrED/external/fna-libs/lib64/libtheorafile.so",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "c7b16205cfe70f428487ae6548dceedf59288a68130939c89b4a1141a14319fb"
+  },
+  {
+    "path": "vendor/CentrED/external/fna-libs/lib64/libFAudio.so.0",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "c7e0f0c42694bec046bfc6a7708abcbf5125dc4384bd7607a571fac47035cc7d"
+  },
+  {
+    "path": "vendor/CentrED/external/fna-libs/lib64/libFNA3D.so.0",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "a552e385c205b5a47ad029b89cee266426169c7c3423a663176e7e8dc41e6d23"
+  },
+  {
+    "path": "vendor/CentrED/external/fna-libs/lib64/libSDL3.so.0",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "a4316e94898648484050da0b09584550757a1fd29336966d725fd80ec6cbc88f"
+  },
+  {
+    "path": "vendor/CentrED/external/fna-libs/osx/libtheorafile.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "f9c824e6886527b12baad1afd499b7c982ab5d0a7b8b4b14253b8312a73c8282"
+  },
+  {
+    "path": "vendor/CentrED/external/fna-libs/osx/libFAudio.0.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "36bd6d4e9c02bb64346262921b3abb1e6447acad84bd525cfca9dcf99d0dbca4"
+  },
+  {
+    "path": "vendor/CentrED/external/fna-libs/osx/libSDL3.0.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "131c7f6a8fff3af0d859892165c763550316e55d8b78ea098abe7d5fd3e122f8"
+  },
+  {
+    "path": "vendor/CentrED/external/fna-libs/osx/libFNA3D.0.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "623ea6ca186fab9b34312489e76579b8b6d5057e28f7dbb2c70b9e37d98be8e6"
+  },
+  {
+    "path": "vendor/CentrED/external/fna-libs/x64/FAudio.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "a33b34185a06a0ab6fc0176b06c101b1041acdd7cc27782ddbd66c2bafd8c80b"
+  },
+  {
+    "path": "vendor/CentrED/external/fna-libs/x64/SDL3.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "f3c8594d940eded149de6f0e05a0cba1262362b96c4d62dfbff74f1822e5d825"
+  },
+  {
+    "path": "vendor/CentrED/external/fna-libs/x64/FNA3D.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "e3a18ed883a1dc60088f420f29e0c25c1add8d349d8988a7583b5e7f9a44b314"
+  },
+  {
+    "path": "vendor/CentrED/external/fna-libs/x64/libtheorafile.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "3db76c1590d92d179ed6cc0532ea28be362cf9f0ac30b248e8c7453847182a47"
+  },
+  {
+    "path": "vendor/CentrED/external/fna-libs/x86/FAudio.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "293fc0d37fb41d119ae2b18478eef1ebf391f2e4a91e686f203b66bcb91b6c10"
+  },
+  {
+    "path": "vendor/CentrED/external/fna-libs/x86/SDL3.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "3bd15556317d8016cf4e6e772c7b006b69778e6fa90c5ed2bceab9af40ce80bc"
+  },
+  {
+    "path": "vendor/CentrED/external/fna-libs/x86/FNA3D.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "2289df1e040970eb6490d38fa6d1f12a73ac6b9629e9b8febb412bb801228879"
+  },
+  {
+    "path": "vendor/CentrED/external/fna-libs/x86/libtheorafile.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "ff26f35d814de04df15b9c6ecdf7bf68113f93808b42916ac2de01ac61632793"
+  },
+  {
+    "path": "vendor/CentrED/CentrED/Renderer/Shaders/MapEffect.fx",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "1848aaf2d0e4559648b6c5d2017bf56822a12e1021b23c7bbfca75bf04f3dbb7"
+  },
+  {
+    "path": "vendor/CentrED/CentrED/Renderer/Shaders/d3dcompiler_47.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "564ad52f84211d2e7dcfbdaf2f74da391fbe65ace42b5dbba119d3717865209a"
+  },
+  {
+    "path": "vendor/ServUO/Server/servuo.ico",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "6e91dde6f5d5e5a0148fa40dbaf46da4357f4c7995b617921e4d8a35861c627c"
+  },
+  {
+    "path": "vendor/TazUO/external/cuoapi/cuoapi.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "fd61b0f5fa22082d87ef37726d75c72a864a62aedd47061b1eac9c02c77e3b00"
+  },
+  {
+    "path": "vendor/TazUO/external/lib64/libtheorafile.so",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "c7b16205cfe70f428487ae6548dceedf59288a68130939c89b4a1141a14319fb"
+  },
+  {
+    "path": "vendor/TazUO/external/lib64/libMonoPosixHelper.so",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "372e0e05daffa9d62d22c272e5354e7dd948a01aa1be9142177b8c168d8135e3"
+  },
+  {
+    "path": "vendor/TazUO/external/lib64/libFAudio.so.0",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "9826b178fa725f194ca0892f6ed8d6f2d58c1062203550d25646660b9088eea7"
+  },
+  {
+    "path": "vendor/TazUO/external/lib64/libFNA3D.so.0",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "ccd811312065c8d6edc468a7ae6abd770c93b590ad87e3ef5605fb6fb084cb2b"
+  },
+  {
+    "path": "vendor/TazUO/external/lib64/libSDL3.so.0",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "459f99fd5c9082c9b83bf9132f00199ed702e9d1e7736554e4b6df153b7031f6"
+  },
+  {
+    "path": "vendor/TazUO/external/osx-arm/libtheorafile.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "4985804b24056761e8cbe26d7796dfcf60d2fc36cef75fca2ae6f2e83fabf6c6"
+  },
+  {
+    "path": "vendor/TazUO/external/osx-arm/libvulkan.1.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "0507e0a414b6dcdbc475a0ee6cf8f06122d147b46da91768bd8ebf6bec74b8c9"
+  },
+  {
+    "path": "vendor/TazUO/external/osx-arm/libFAudio.0.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "eb63091db32a9af9fd3664ca73b756d73415b54d1a3442d19398d8d752aa6c19"
+  },
+  {
+    "path": "vendor/TazUO/external/osx-arm/libSDL3.0.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "cce5f0a8b2aeb727cdf4d32774c8d2712b5a837c0a81fd1b9547f34c32242bc7"
+  },
+  {
+    "path": "vendor/TazUO/external/osx-arm/libMoltenVK.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "6efdf8a8b0f69337ed41a67e259e3d7713196a58ba6bd861d0093441906ed414"
+  },
+  {
+    "path": "vendor/TazUO/external/osx-arm/libFNA3D.0.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "7540724135133cc99afeb8c5691d278b9df7a856784f6e0e8632dfcb32a56293"
+  },
+  {
+    "path": "vendor/TazUO/external/osx-arm/libMonoPosixHelper.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "243763bbaa900ae5f69ce3c5325ed1f321b6b3f77aaf7c1318db84e5ae32343a"
+  },
+  {
+    "path": "vendor/TazUO/external/osx/libtheorafile.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "4985804b24056761e8cbe26d7796dfcf60d2fc36cef75fca2ae6f2e83fabf6c6"
+  },
+  {
+    "path": "vendor/TazUO/external/osx/libvulkan.1.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "0507e0a414b6dcdbc475a0ee6cf8f06122d147b46da91768bd8ebf6bec74b8c9"
+  },
+  {
+    "path": "vendor/TazUO/external/osx/libFAudio.0.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "eb63091db32a9af9fd3664ca73b756d73415b54d1a3442d19398d8d752aa6c19"
+  },
+  {
+    "path": "vendor/TazUO/external/osx/libSDL3.0.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "cce5f0a8b2aeb727cdf4d32774c8d2712b5a837c0a81fd1b9547f34c32242bc7"
+  },
+  {
+    "path": "vendor/TazUO/external/osx/libMoltenVK.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "6efdf8a8b0f69337ed41a67e259e3d7713196a58ba6bd861d0093441906ed414"
+  },
+  {
+    "path": "vendor/TazUO/external/osx/libFNA3D.0.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "7540724135133cc99afeb8c5691d278b9df7a856784f6e0e8632dfcb32a56293"
+  },
+  {
+    "path": "vendor/TazUO/external/osx/libMonoPosixHelper.dylib",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "243763bbaa900ae5f69ce3c5325ed1f321b6b3f77aaf7c1318db84e5ae32343a"
+  },
+  {
+    "path": "vendor/TazUO/external/x64/FAudio.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "f0d1d612aedecaee3f15192ca4419618d51a10b39a844484493cda976dfa9962"
+  },
+  {
+    "path": "vendor/TazUO/external/x64/SDL3.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "800384e2b426e580d21a0ed5317ff18d530efe4b366870977337b6c804e502e1"
+  },
+  {
+    "path": "vendor/TazUO/external/x64/FNA3D.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "04524e78292aac65a380be8e34c7a34363222b9d11c9e854a252bd79ca6aece4"
+  },
+  {
+    "path": "vendor/TazUO/external/x64/libtheorafile.dll",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "6ca04db8d460ca12b42d0507031aa15de0d866bfadbd0927cf5235068a6de5cb"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Client/cuologo.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "5c1f053b9afa00992a25b692091828fe7f97c5b61438b2040ee83e200be4d777"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Client/game-background.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "49098eb522a7e6618d2d9462cb2a2fb6410c6158bafe7d5b4afb795004761fc8"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Client/cuoicon.ico",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "f49306f92f5bd81bbcde7fd2f9850b651e48933af412d70e73687327a5875f3b"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/scroll-horizontal.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "21752c445dfb1f4ddacce3d316ac34b551795f24f43c9667fbdf899f110ef7c8"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/scroll-knob-vertical.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "c90d5cd18ecdd79742a643ba854cdfa93ad832bce7de2d15df28e09fc3f5d858"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/TUOGumpBg.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "6e0d29559cc269f2651c127e942d3646b67461d8861e1ea604835ff0cd96fae0"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/MStatusGumpVertical.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "e8e909888e0cc36bcfb1c41f5fda428054539d445a9040da960f9689efd2e754"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/lockicon.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "ebcb413aab1f9d499d108d3119ee6fd7df04c2b3ce3f27463c02c583db24d5ea"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/TUOUIButtonDangerDown.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "77c313a5c343c7c131a466e6d7be27cedf479f20c0e1199b5f6d6bb87e7a7893"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/TUOUIButtonDown.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "a8242cb745f3b215bd03d4a3f9c948fee85413a79f6bb8cc751348a2d9e673aa"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/scroll-knob-horizontal.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "685741fd38c0ae0331e9b023be2bac4f1d5eab1ff0d901fbd778b34726aeb592"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/TUOUIButtonUp.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "a272092e56c037a09a688874f171bf8f09e9bac963156a0ee8f30d208c66cfe1"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/TUOUIButtonDangerUp.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "e51a48a7d360bc65f3728762fee385e6eeb53c1577f1a821ea3f9eb2a35bf703"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/modern-paperdollgump.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "bb8d7b56878591c6087507caa0fa154059dfec443a76b6fbc33697a222a5ef08"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/TUOUICheckBoxUnChecked.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "15200bfc6504954162c2c9274c8f907e63eb3a89c5ee6d5cccf7e67614b7a868"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/downicon.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "f87bf5ab60679aa934659f7357e5a59803dd6d60e98869b4a808216f957a97a6"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/upicon.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "2410cd804e25db93a905bce79b3ec41902390c2bd16e53255350a41d44813eb2"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/TUOUICheckBoxChecked.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "492486412d9a35c169ac1e7a0346e484365fa23c7a28de4df6f2b6f8a6233b8b"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/TazUOSM.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "6f16807e96c90ef653d5e6347759a1d22e46a1619668f1f2a55a75e2f18c2251"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/scroll-vertical.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "b5fa87c519df62df814cf1375aa3aee883d17e78d7ef966c3066939abb941290"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/CharSelectBG.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "0950f12cb3a74ae5fb56a1fa512453923dab6ec594b66a4323b16e1f1025f568"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/gumpartassets/MStatusGumpHorizontal.png",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "bd15b3533c813b7b2dac885ac10e82ef1446e51c52cd3c0fb8cedf3c4f6f32c2"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/fonts/NotoSansSymbols2-Regular.ttf",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "f67f40c65f929f029827ab37cfdc4897dfd9ae3c28d9e98ba46e0d52e39eb97e"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/fonts/alagard.ttf",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "12f1e58f79d18d2ef49d923d801baade892769289bfcb9444769b6a4f7847007"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/fonts/avadonian.ttf",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "875a10a35ed50e8011221b25f5e65867dac5962fd0d513c03c3cccb0cb45eafd"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/fonts/ibm-plex.ttf",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "5b675481bf5e0e552c875c9f2039d07c7314a37ca0bbb8c10d40f903f1089437"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/fonts/Roboto-Bold.ttf",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "4aaf8c5b661a386998c2e70cf2b87e2440f5404e0b8fd81164f0413fb3435ec6"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/fonts/Roboto-Mono.ttf",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "e4bf45837847d4abfa5a502b807a83393aa138727bdb9ea9c93fb17d53208d95"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/fonts/Roboto-Regular.ttf",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "7277cfb805def6410f317129b8e1f78bdd47d1a4e24c233077d06e88a36e57ae"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/fonts/LeagueSpartan-Bold.ttf",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "6addf9b681be124851edcbf800c2a440900ad275523f0e755fffd3519f72ab00"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/fonts/uo-unicode-1.ttf",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "a2501376460c9ec6591e8a3788405201ab4098fcf96860d36777cba0c5aab807"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Assets/fonts/Kingthings Exeter.ttf",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "510813dfd4bd1b51a34cb18599e91c4acded383d940e1aec6844c47a9f67eadb"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Renderer/shaders/IsometricWorld.fx",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "7d3bcf34266c9f136750116bb95508c15f059e8a7995d4fbb63c845e8a014d62"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Renderer/shaders/ScreenOverlay.fx",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "3594325d16ccd3088f51611f9087f48381738a8826d77b75a1bfc1361021f5df"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Renderer/shaders/xBR.fx",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "ab189dbabf455afa4234fbc05c53ff5c0e6c923ee6ee3c05d53d6c42ecf672f1"
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Renderer/shaders/FSR.fx",
+    "status": "UNREVIEWED-preserved-upstream-resource",
+    "sha256": "253cbb53bb906b778fb798a3766ee226cfcf8b033b7b2504d73b7b1792025773"
+  }
+]

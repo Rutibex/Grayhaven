@@ -1,0 +1,463 @@
+{
+  "terrain": [
+    {
+      "id": "greyhaven.terrain.grass",
+      "numericId": 4096,
+      "nameKey": "terrain.grass",
+      "visual": "grass",
+      "impassable": false,
+      "wet": false,
+      "surface": true,
+      "height": 0
+    },
+    {
+      "id": "greyhaven.terrain.dirt",
+      "numericId": 4097,
+      "nameKey": "terrain.dirt",
+      "visual": "dirt",
+      "impassable": false,
+      "wet": false,
+      "surface": true,
+      "height": 0
+    },
+    {
+      "id": "greyhaven.terrain.stone",
+      "numericId": 4098,
+      "nameKey": "terrain.stone",
+      "visual": "stone",
+      "impassable": false,
+      "wet": false,
+      "surface": true,
+      "height": 0
+    },
+    {
+      "id": "greyhaven.terrain.water",
+      "numericId": 4099,
+      "nameKey": "terrain.water",
+      "visual": "water",
+      "impassable": true,
+      "wet": true,
+      "surface": false,
+      "height": 0
+    }
+  ],
+  "statics": [
+    {
+      "id": "greyhaven.static.wall-left",
+      "numericId": 8192,
+      "nameKey": "static.wall-left",
+      "visual": "wall-left",
+      "impassable": true,
+      "surface": false,
+      "wet": false,
+      "height": 20
+    },
+    {
+      "id": "greyhaven.static.wall-right",
+      "numericId": 8193,
+      "nameKey": "static.wall-right",
+      "visual": "wall-right",
+      "impassable": true,
+      "surface": false,
+      "wet": false,
+      "height": 20
+    },
+    {
+      "id": "greyhaven.static.door",
+      "numericId": 8194,
+      "nameKey": "static.door",
+      "visual": "door",
+      "impassable": true,
+      "surface": false,
+      "wet": false,
+      "height": 20
+    },
+    {
+      "id": "greyhaven.static.tree",
+      "numericId": 8195,
+      "nameKey": "static.tree",
+      "visual": "tree",
+      "impassable": true,
+      "surface": false,
+      "wet": false,
+      "height": 25
+    },
+    {
+      "id": "greyhaven.static.chest",
+      "numericId": 8196,
+      "nameKey": "static.chest",
+      "visual": "chest",
+      "impassable": true,
+      "surface": false,
+      "wet": false,
+      "height": 12
+    },
+    {
+      "id": "greyhaven.static.chest-open",
+      "numericId": 8197,
+      "nameKey": "static.chest-open",
+      "visual": "chest-open",
+      "impassable": true,
+      "surface": false,
+      "wet": false,
+      "height": 12
+    },
+    {
+      "id": "greyhaven.static.lantern",
+      "numericId": 8198,
+      "nameKey": "static.lantern",
+      "visual": "lantern",
+      "impassable": false,
+      "surface": false,
+      "wet": false,
+      "height": 8
+    },
+    {
+      "id": "greyhaven.static.shrub",
+      "numericId": 8199,
+      "nameKey": "static.shrub",
+      "visual": "shrub",
+      "impassable": true,
+      "surface": false,
+      "wet": false,
+      "height": 5
+    },
+    {
+      "id": "greyhaven.static.bed",
+      "numericId": 8200,
+      "nameKey": "static.bed",
+      "visual": "bed",
+      "impassable": true,
+      "surface": false,
+      "wet": false,
+      "height": 8
+    },
+    {
+      "id": "greyhaven.static.table",
+      "numericId": 8201,
+      "nameKey": "static.table",
+      "visual": "table",
+      "impassable": true,
+      "surface": false,
+      "wet": false,
+      "height": 10
+    },
+    {
+      "id": "greyhaven.static.stool",
+      "numericId": 8202,
+      "nameKey": "static.stool",
+      "visual": "stool",
+      "impassable": true,
+      "surface": false,
+      "wet": false,
+      "height": 6
+    },
+    {
+      "id": "greyhaven.static.anvil",
+      "numericId": 8203,
+      "nameKey": "static.anvil",
+      "visual": "anvil",
+      "impassable": true,
+      "surface": false,
+      "wet": false,
+      "height": 10
+    },
+    {
+      "id": "greyhaven.static.bookcase",
+      "numericId": 8204,
+      "nameKey": "static.bookcase",
+      "visual": "bookcase",
+      "impassable": true,
+      "surface": false,
+      "wet": false,
+      "height": 24
+    },
+    {
+      "id": "greyhaven.static.forge",
+      "numericId": 8205,
+      "nameKey": "static.forge",
+      "visual": "forge",
+      "impassable": true,
+      "surface": false,
+      "wet": false,
+      "height": 22
+    },
+    {
+      "id": "greyhaven.static.workbench",
+      "numericId": 8206,
+      "nameKey": "static.workbench",
+      "visual": "workbench",
+      "impassable": true,
+      "surface": false,
+      "wet": false,
+      "height": 12
+    },
+    {
+      "id": "greyhaven.static.gravestone",
+      "numericId": 8207,
+      "nameKey": "static.gravestone",
+      "visual": "gravestone",
+      "impassable": true,
+      "surface": false,
+      "wet": false,
+      "height": 12
+    },
+    {
+      "id": "greyhaven.static.barrel",
+      "numericId": 8208,
+      "nameKey": "static.barrel",
+      "visual": "barrel",
+      "impassable": true,
+      "surface": false,
+      "wet": false,
+      "height": 12
+    },
+    {
+      "id": "greyhaven.static.jetty-piling",
+      "numericId": 8209,
+      "nameKey": "static.jetty-piling",
+      "visual": "jetty-piling",
+      "impassable": true,
+      "surface": false,
+      "wet": false,
+      "height": 12
+    },
+    {
+      "id": "greyhaven.static.ruin-column",
+      "numericId": 8210,
+      "nameKey": "static.ruin-column",
+      "visual": "ruin-column",
+      "impassable": true,
+      "surface": false,
+      "wet": false,
+      "height": 20
+    }
+  ],
+  "items": [
+    {
+      "id": "greyhaven.item.trail-hat",
+      "nameKey": "item.trail-hat",
+      "groundVisual": "hat-leather",
+      "inventoryVisual": "hat-leather",
+      "equipment": {
+        "slot": "hat",
+        "variantValue": 1,
+        "requiredStrength": 0,
+        "requiredIntelligence": 0
+      },
+      "weight": 1,
+      "stackable": false,
+      "price": 30
+    },
+    {
+      "id": "greyhaven.item.wizard-hat",
+      "nameKey": "item.wizard-hat",
+      "groundVisual": "hat-wizard",
+      "inventoryVisual": "hat-wizard",
+      "equipment": {
+        "slot": "hat",
+        "variantValue": 2,
+        "requiredStrength": 0,
+        "requiredIntelligence": 8
+      },
+      "weight": 1,
+      "stackable": false,
+      "price": 30
+    },
+    {
+      "id": "greyhaven.item.iron-sword",
+      "nameKey": "item.iron-sword",
+      "groundVisual": "sword",
+      "inventoryVisual": "sword",
+      "equipment": {
+        "slot": "sword",
+        "variantValue": 1,
+        "requiredStrength": 8,
+        "requiredIntelligence": 0
+      },
+      "weight": 1,
+      "stackable": false,
+      "price": 30
+    },
+    {
+      "id": "greyhaven.item.round-shield",
+      "nameKey": "item.round-shield",
+      "groundVisual": "shield",
+      "inventoryVisual": "shield",
+      "equipment": {
+        "slot": "shield",
+        "variantValue": 1,
+        "requiredStrength": 8,
+        "requiredIntelligence": 0
+      },
+      "weight": 1,
+      "stackable": false,
+      "price": 30
+    },
+    {
+      "id": "greyhaven.item.healing-tonic",
+      "nameKey": "item.healing-tonic",
+      "groundVisual": "potion",
+      "inventoryVisual": "potion",
+      "equipment": null,
+      "weight": 1,
+      "stackable": true,
+      "price": 8
+    },
+    {
+      "id": "greyhaven.item.silver-marks",
+      "nameKey": "item.silver-marks",
+      "groundVisual": "coins",
+      "inventoryVisual": "coins",
+      "equipment": null,
+      "weight": 0.01,
+      "stackable": true,
+      "price": 1
+    },
+    {
+      "id": "greyhaven.item.tide-crystal",
+      "nameKey": "item.tide-crystal",
+      "groundVisual": "crystal",
+      "inventoryVisual": "crystal",
+      "equipment": null,
+      "weight": 1,
+      "stackable": true,
+      "price": 20
+    },
+    {
+      "id": "greyhaven.item.sealed-scroll",
+      "nameKey": "item.sealed-scroll",
+      "groundVisual": "scroll",
+      "inventoryVisual": "scroll",
+      "equipment": null,
+      "weight": 1,
+      "stackable": true,
+      "price": 12
+    },
+    {
+      "id": "greyhaven.item.field-satchel",
+      "nameKey": "item.field-satchel",
+      "groundVisual": "satchel",
+      "inventoryVisual": "satchel",
+      "equipment": null,
+      "weight": 1,
+      "stackable": false,
+      "containerSlots": 12,
+      "containerWeight": 20,
+      "price": 18
+    },
+    {
+      "id": "greyhaven.item.sea-chest",
+      "nameKey": "item.sea-chest",
+      "groundVisual": "chest",
+      "inventoryVisual": "chest",
+      "equipment": null,
+      "weight": 8,
+      "stackable": false,
+      "containerSlots": 24,
+      "containerWeight": 60,
+      "price": 40
+    },
+    {
+      "id": "greyhaven.item.mariner-greatblade",
+      "nameKey": "item.mariner-greatblade",
+      "groundVisual": "greatblade",
+      "inventoryVisual": "greatblade",
+      "equipment": {
+        "slot": "sword",
+        "variantValue": 1,
+        "twoHanded": true,
+        "requiredStrength": 10
+      },
+      "weight": 5,
+      "stackable": false,
+      "price": 75
+    },
+    {
+      "id": "greyhaven.item.bandage",
+      "nameKey": "item.bandage",
+      "groundVisual": "bandage",
+      "inventoryVisual": "bandage",
+      "equipment": null,
+      "weight": 0.1,
+      "stackable": true,
+      "price": 3
+    },
+    {
+      "id": "greyhaven.item.fallen-pack",
+      "nameKey": "item.fallen-pack",
+      "groundVisual": "backpack",
+      "inventoryVisual": "backpack",
+      "anchored": true,
+      "equipment": null,
+      "weight": 0.1,
+      "stackable": false,
+      "containerSlots": 128,
+      "containerWeight": 100,
+      "price": 1
+    }
+  ],
+  "spells": [
+    {
+      "id": "greyhaven.spell.dawn",
+      "nameKey": "spell.dawn",
+      "visual": "spell-dawn",
+      "rulesEnabled": true
+    },
+    {
+      "id": "greyhaven.spell.storm",
+      "nameKey": "spell.storm",
+      "visual": "spell-storm",
+      "rulesEnabled": true
+    },
+    {
+      "id": "greyhaven.spell.ember",
+      "nameKey": "spell.ember",
+      "visual": "spell-ember",
+      "rulesEnabled": true
+    },
+    {
+      "id": "greyhaven.spell.renew",
+      "nameKey": "spell.renew",
+      "visual": "spell-renew",
+      "rulesEnabled": true
+    },
+    {
+      "id": "greyhaven.spell.ward",
+      "nameKey": "spell.ward",
+      "visual": "spell-ward",
+      "rulesEnabled": true
+    },
+    {
+      "id": "greyhaven.spell.venom",
+      "nameKey": "spell.venom",
+      "visual": "spell-venom",
+      "rulesEnabled": true
+    },
+    {
+      "id": "greyhaven.spell.bind",
+      "nameKey": "spell.bind",
+      "visual": "spell-bind",
+      "rulesEnabled": true
+    },
+    {
+      "id": "greyhaven.spell.gate",
+      "nameKey": "spell.gate",
+      "visual": "spell-gate",
+      "rulesEnabled": true
+    }
+  ],
+  "abilities": [],
+  "prefabs": [],
+  "palette": {
+    "uiGold": "#d9bb80",
+    "uiInk": "#18262b"
+  },
+  "features": {
+    "boats": false,
+    "housing": false,
+    "legacySkills": false,
+    "legacyProfessions": false,
+    "legacyMusic": false
+  }
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "path": "vendor/ServUO/ServUO.exe.config",
+    "originalSha256": "051099983b896673909e01a1f631b6652abb88da95c9f06f3efef4be033091fa",
+    "sha256": "d3ac458f80301bf7e6b9428a5a479317a613e0145a23d98315a3a3906ba9436a",
+    "reason": "Phase 2 original-content provider / early boot seam; legacy behavior remains outside the explicit original path. See docs/PHASE-2.md."
+  },
+  {
+    "path": "vendor/ServUO/Server/Main.cs",
+    "originalSha256": "dac06d9e6121757c69a7f6bb961e6ff2ed41a1eaa5627bb952ee3a7729ef9b0c",
+    "sha256": "c06527085a039e3350f212faaba12f293af54abc595a37520d73a9ba1315c579",
+    "reason": "Phase 2 original-content provider / early boot seam; legacy behavior remains outside the explicit original path. See docs/PHASE-2.md."
+  },
+  {
+    "path": "vendor/ServUO/Server/TileData.cs",
+    "originalSha256": "cad15a4386aa8adbd28590765ef056e62ca6c3d381171ad228309995033e955b",
+    "sha256": "2873418420bc40cfa1d2424f7f674800b29932b94181c622872abaa25fc13b8f",
+    "reason": "Phase 2 original-content provider / early boot seam; legacy behavior remains outside the explicit original path. See docs/PHASE-2.md."
+  },
+  {
+    "path": "vendor/ServUO/Server/TileMatrix.cs",
+    "originalSha256": "5cb3b2207768c3c69729a2cefac758f69a45dccec1cea01b04ccff76ba28fe68",
+    "sha256": "eed77c5541e8b653f145f1e55f3c178451b02dde970ed3963072e40a6b1aded9",
+    "reason": "Phase 2 original-content provider / early boot seam; legacy behavior remains outside the explicit original path. See docs/PHASE-2.md."
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Client/ClassicUO.Client.csproj",
+    "originalSha256": "668a9a956014c15f51b272546821820e2d2f5fcdb7bde19bc960e2c8c7b728fd",
+    "sha256": "9580c9b1fcb1d04702c16356853a007cc10cabaece600790719c686b0b464a00",
+    "reason": "Phase 2 original-content provider / early boot seam; legacy behavior remains outside the explicit original path. See docs/PHASE-2.md."
+  },
+  {
+    "path": "vendor/TazUO/src/ClassicUO.Client/Main.cs",
+    "originalSha256": "7f145133ea518ff314d915aa027d04a33238aaa853bdbe8920f2ec6247801657",
+    "sha256": "85271dfb019f4f13acbcf65356e5a6f734a8693c0eac60a5b50db93f43f67d38",
+    "reason": "Phase 2 original-content provider / early boot seam; legacy behavior remains outside the explicit original path. See docs/PHASE-2.md."
+  },
+  {
+    "path": "vendor/CentrED/CentrED/Application.cs",
+    "originalSha256": "e6f94f0356eccca0b3ac8977a2d54845f89ecb1e1d1602d157893a50f4b24238",
+    "sha256": "e874e428fb71a1dcf851ad7ee6aeb9c35cf0066b8d593f9e0e2afdb381d497aa",
+    "reason": "Phase 2 original-content provider / early boot seam; legacy behavior remains outside the explicit original path. See docs/PHASE-2.md."
+  },
+  {
+    "path": "vendor/CentrED/CentrED/CentrED.csproj",
+    "originalSha256": "e26f3de3a94fd296d50504713465b2bf63c81bb65f492aa81a02505b17aec1a3",
+    "sha256": "9641480a6f0e43a1ab9b3ca9743a4fb7bccd830ffe88b329a6b56dc8bbd71a85",
+    "reason": "Original-mode shared presentation including Phase 8 art/audio production. See docs/PHASE_8.md."
+  },
+  {
+    "path": "vendor/CentrED/Shared/Shared.csproj",
+    "originalSha256": "7b276e1d385c663db0b8df8ee2b54b64018594ad0b0b7c78b21ceb8a9a44b43d",
+    "sha256": "8778e10ba7beca0fe3b8457b0885ca6e7a13451ccaa6af8cfe23c65ac35aaf40",
+    "reason": "Phase 2 original-content provider / early boot seam; legacy behavior remains outside the explicit original path. See docs/PHASE-2.md."
+  },
+  {
+    "path": "vendor/CentrED/Shared/TileDataProvider.cs",
+    "originalSha256": "6e8c79daa05c8ecdd343a41a6579272d33e7b722f62b86547e13bd2d6bb2749e",
+    "sha256": "73bc7131e9a410bdb416dd16925bfcea117128fdb6c0f9d654adaa9d407d0d0b",
+    "reason": "Phase 2 original-content provider / early boot seam; legacy behavior remains outside the explicit original path. See docs/PHASE-2.md."
+  },
+  {
+    "path": "vendor/TazUO/.gitattributes",
+    "originalSha256": "ea6d65bcf38a404098c83e5e7b6eaf7f98c9d842357576f85101de4fc021419d",
+    "sha256": "c278d4157640e7fa3586219e00cc8b00bc61bd4e0934c875bd01283746c883ee",
+    "reason": "GitHub source packaging only: suppress upstream Git line-ending normalization so byte-exact dependency/source hashes survive clone."
+  }
+]

@@ -1,0 +1,6 @@
+<Project>
+  <!-- Keep explicit publish targets from rewriting portable development restore locks. -->
+  <PropertyGroup Condition="'$(RuntimeIdentifier)' != ''">
+    <NuGetLockFilePath>$(MSBuildProjectDirectory)/packages.$(RuntimeIdentifier).lock.json</NuGetLockFilePath>
+  </PropertyGroup>
+</Project>

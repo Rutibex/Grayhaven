@@ -1,0 +1,962 @@
+[
+  {
+    "name": "timber-left",
+    "source": "architecture.png",
+    "cell": [
+      0,
+      0,
+      384,
+      256
+    ],
+    "trim": [
+      102,
+      7,
+      318,
+      256
+    ],
+    "size": [
+      44,
+      76
+    ]
+  },
+  {
+    "name": "timber-right",
+    "source": "architecture.png",
+    "cell": [
+      384,
+      0,
+      768,
+      256
+    ],
+    "trim": [
+      86,
+      8,
+      298,
+      256
+    ],
+    "size": [
+      44,
+      76
+    ]
+  },
+  {
+    "name": "cellar-left",
+    "source": "architecture.png",
+    "cell": [
+      768,
+      0,
+      1152,
+      256
+    ],
+    "trim": [
+      83,
+      8,
+      307,
+      256
+    ],
+    "size": [
+      44,
+      76
+    ]
+  },
+  {
+    "name": "cellar-right",
+    "source": "architecture.png",
+    "cell": [
+      1152,
+      0,
+      1536,
+      256
+    ],
+    "trim": [
+      76,
+      6,
+      298,
+      256
+    ],
+    "size": [
+      44,
+      76
+    ]
+  },
+  {
+    "name": "roof-terracotta",
+    "source": "architecture.png",
+    "cell": [
+      0,
+      256,
+      384,
+      512
+    ],
+    "trim": [
+      29,
+      0,
+      365,
+      256
+    ],
+    "size": [
+      44,
+      44
+    ]
+  },
+  {
+    "name": "floor-wood",
+    "source": "architecture.png",
+    "cell": [
+      384,
+      256,
+      768,
+      512
+    ],
+    "trim": [
+      32,
+      6,
+      362,
+      256
+    ],
+    "size": [
+      44,
+      44
+    ]
+  },
+  {
+    "name": "floor-cellar",
+    "source": "architecture.png",
+    "cell": [
+      768,
+      256,
+      1152,
+      512
+    ],
+    "trim": [
+      17,
+      0,
+      363,
+      256
+    ],
+    "size": [
+      44,
+      44
+    ]
+  },
+  {
+    "name": "sand",
+    "source": "architecture.png",
+    "cell": [
+      1152,
+      256,
+      1536,
+      512
+    ],
+    "trim": [
+      17,
+      7,
+      364,
+      256
+    ],
+    "size": [
+      44,
+      44
+    ]
+  },
+  {
+    "name": "jetty-piling",
+    "source": "architecture.png",
+    "cell": [
+      0,
+      512,
+      384,
+      768
+    ],
+    "trim": [
+      125,
+      0,
+      334,
+      256
+    ],
+    "size": [
+      42,
+      64
+    ]
+  },
+  {
+    "name": "gate-closed",
+    "source": "architecture.png",
+    "cell": [
+      384,
+      512,
+      768,
+      768
+    ],
+    "trim": [
+      93,
+      0,
+      300,
+      256
+    ],
+    "size": [
+      48,
+      70
+    ]
+  },
+  {
+    "name": "stairs-down",
+    "source": "architecture.png",
+    "cell": [
+      768,
+      512,
+      1152,
+      768
+    ],
+    "trim": [
+      13,
+      0,
+      371,
+      256
+    ],
+    "size": [
+      44,
+      44
+    ]
+  },
+  {
+    "name": "beacon-lit",
+    "source": "architecture.png",
+    "cell": [
+      1152,
+      512,
+      1536,
+      768
+    ],
+    "trim": [
+      112,
+      0,
+      264,
+      256
+    ],
+    "size": [
+      44,
+      76
+    ]
+  },
+  {
+    "name": "door-closed",
+    "source": "architecture.png",
+    "cell": [
+      0,
+      768,
+      384,
+      1024
+    ],
+    "trim": [
+      114,
+      0,
+      313,
+      233
+    ],
+    "size": [
+      44,
+      64
+    ]
+  },
+  {
+    "name": "door-open",
+    "source": "architecture.png",
+    "cell": [
+      384,
+      768,
+      768,
+      1024
+    ],
+    "trim": [
+      122,
+      0,
+      321,
+      223
+    ],
+    "size": [
+      44,
+      64
+    ]
+  },
+  {
+    "name": "ruin-column",
+    "source": "architecture.png",
+    "cell": [
+      768,
+      768,
+      1152,
+      1024
+    ],
+    "trim": [
+      72,
+      0,
+      328,
+      227
+    ],
+    "size": [
+      44,
+      76
+    ]
+  },
+  {
+    "name": "signpost",
+    "source": "architecture.png",
+    "cell": [
+      1152,
+      768,
+      1536,
+      1024
+    ],
+    "trim": [
+      106,
+      0,
+      258,
+      226
+    ],
+    "size": [
+      42,
+      64
+    ]
+  },
+  {
+    "name": "bandage",
+    "source": "relics.png",
+    "cell": [
+      0,
+      0,
+      384,
+      256
+    ],
+    "trim": [
+      35,
+      57,
+      323,
+      241
+    ]
+  },
+  {
+    "name": "lantern-heart",
+    "source": "relics.png",
+    "cell": [
+      384,
+      0,
+      768,
+      256
+    ],
+    "trim": [
+      54,
+      8,
+      219,
+      256
+    ]
+  },
+  {
+    "name": "vault-key",
+    "source": "relics.png",
+    "cell": [
+      768,
+      0,
+      1152,
+      256
+    ],
+    "trim": [
+      0,
+      58,
+      334,
+      253
+    ]
+  },
+  {
+    "name": "greatblade",
+    "source": "relics.png",
+    "cell": [
+      1091,
+      0,
+      1536,
+      317
+    ],
+    "trim": [
+      40,
+      13,
+      433,
+      297
+    ]
+  },
+  {
+    "name": "letter-packet",
+    "source": "relics.png",
+    "cell": [
+      0,
+      256,
+      384,
+      512
+    ],
+    "trim": [
+      52,
+      62,
+      331,
+      256
+    ]
+  },
+  {
+    "name": "satchel",
+    "source": "relics.png",
+    "cell": [
+      384,
+      256,
+      768,
+      512
+    ],
+    "trim": [
+      27,
+      38,
+      309,
+      255
+    ]
+  },
+  {
+    "name": "gate-rune",
+    "source": "relics.png",
+    "cell": [
+      768,
+      256,
+      1152,
+      512
+    ],
+    "trim": [
+      37,
+      28,
+      315,
+      254
+    ]
+  },
+  {
+    "name": "corpse-marker",
+    "source": "relics.png",
+    "cell": [
+      1152,
+      256,
+      1536,
+      512
+    ],
+    "trim": [
+      1,
+      70,
+      364,
+      256
+    ]
+  },
+  {
+    "name": "fx-ember",
+    "source": "relics.png",
+    "cell": [
+      0,
+      512,
+      384,
+      768
+    ],
+    "trim": [
+      44,
+      0,
+      377,
+      256
+    ]
+  },
+  {
+    "name": "fx-venom",
+    "source": "relics.png",
+    "cell": [
+      384,
+      512,
+      768,
+      768
+    ],
+    "trim": [
+      104,
+      17,
+      272,
+      256
+    ]
+  },
+  {
+    "name": "fx-storm",
+    "source": "relics.png",
+    "cell": [
+      768,
+      512,
+      1152,
+      768
+    ],
+    "trim": [
+      5,
+      7,
+      384,
+      256
+    ]
+  },
+  {
+    "name": "fx-ward",
+    "source": "relics.png",
+    "cell": [
+      1152,
+      512,
+      1536,
+      768
+    ],
+    "trim": [
+      0,
+      0,
+      372,
+      256
+    ]
+  },
+  {
+    "name": "fx-heal",
+    "source": "relics.png",
+    "cell": [
+      0,
+      768,
+      384,
+      1024
+    ],
+    "trim": [
+      85,
+      0,
+      293,
+      242
+    ]
+  },
+  {
+    "name": "fx-gate",
+    "source": "relics.png",
+    "cell": [
+      384,
+      768,
+      768,
+      1024
+    ],
+    "trim": [
+      1,
+      0,
+      357,
+      229
+    ]
+  },
+  {
+    "name": "fx-bind",
+    "source": "relics.png",
+    "cell": [
+      768,
+      768,
+      1152,
+      1024
+    ],
+    "trim": [
+      14,
+      0,
+      384,
+      227
+    ]
+  },
+  {
+    "name": "fx-quest",
+    "source": "relics.png",
+    "cell": [
+      1152,
+      768,
+      1536,
+      1024
+    ],
+    "trim": [
+      0,
+      0,
+      360,
+      254
+    ]
+  },
+  {
+    "name": "shore-raider-0",
+    "source": "creatures.png",
+    "cell": [
+      0,
+      0,
+      280,
+      280
+    ],
+    "trim": [
+      79,
+      5,
+      261,
+      268
+    ]
+  },
+  {
+    "name": "shore-raider-1",
+    "source": "creatures.png",
+    "cell": [
+      280,
+      0,
+      561,
+      280
+    ],
+    "trim": [
+      81,
+      6,
+      264,
+      269
+    ]
+  },
+  {
+    "name": "shore-raider-2",
+    "source": "creatures.png",
+    "cell": [
+      561,
+      0,
+      841,
+      280
+    ],
+    "trim": [
+      78,
+      6,
+      219,
+      271
+    ]
+  },
+  {
+    "name": "shore-raider-3",
+    "source": "creatures.png",
+    "cell": [
+      841,
+      0,
+      1122,
+      280
+    ],
+    "trim": [
+      29,
+      5,
+      208,
+      270
+    ]
+  },
+  {
+    "name": "shore-raider-4",
+    "source": "creatures.png",
+    "cell": [
+      1122,
+      0,
+      1402,
+      280
+    ],
+    "trim": [
+      36,
+      5,
+      196,
+      269
+    ]
+  },
+  {
+    "name": "reef-slinger-0",
+    "source": "creatures.png",
+    "cell": [
+      0,
+      280,
+      280,
+      561
+    ],
+    "trim": [
+      92,
+      0,
+      228,
+      281
+    ]
+  },
+  {
+    "name": "reef-slinger-1",
+    "source": "creatures.png",
+    "cell": [
+      280,
+      280,
+      561,
+      561
+    ],
+    "trim": [
+      99,
+      0,
+      235,
+      281
+    ]
+  },
+  {
+    "name": "reef-slinger-2",
+    "source": "creatures.png",
+    "cell": [
+      561,
+      280,
+      841,
+      561
+    ],
+    "trim": [
+      92,
+      0,
+      189,
+      281
+    ]
+  },
+  {
+    "name": "reef-slinger-3",
+    "source": "creatures.png",
+    "cell": [
+      841,
+      280,
+      1122,
+      561
+    ],
+    "trim": [
+      41,
+      0,
+      186,
+      281
+    ]
+  },
+  {
+    "name": "reef-slinger-4",
+    "source": "creatures.png",
+    "cell": [
+      1122,
+      280,
+      1402,
+      561
+    ],
+    "trim": [
+      40,
+      0,
+      188,
+      281
+    ]
+  },
+  {
+    "name": "salt-hexer-0",
+    "source": "creatures.png",
+    "cell": [
+      0,
+      561,
+      280,
+      842
+    ],
+    "trim": [
+      54,
+      0,
+      240,
+      281
+    ]
+  },
+  {
+    "name": "salt-hexer-1",
+    "source": "creatures.png",
+    "cell": [
+      280,
+      561,
+      561,
+      842
+    ],
+    "trim": [
+      71,
+      0,
+      240,
+      281
+    ]
+  },
+  {
+    "name": "salt-hexer-2",
+    "source": "creatures.png",
+    "cell": [
+      561,
+      561,
+      841,
+      842
+    ],
+    "trim": [
+      63,
+      0,
+      187,
+      281
+    ]
+  },
+  {
+    "name": "salt-hexer-3",
+    "source": "creatures.png",
+    "cell": [
+      841,
+      561,
+      1122,
+      842
+    ],
+    "trim": [
+      40,
+      0,
+      216,
+      281
+    ]
+  },
+  {
+    "name": "salt-hexer-4",
+    "source": "creatures.png",
+    "cell": [
+      1122,
+      561,
+      1402,
+      842
+    ],
+    "trim": [
+      41,
+      0,
+      223,
+      281
+    ]
+  },
+  {
+    "name": "brineguard-0",
+    "source": "creatures.png",
+    "cell": [
+      0,
+      842,
+      280,
+      1122
+    ],
+    "trim": [
+      29,
+      0,
+      277,
+      268
+    ]
+  },
+  {
+    "name": "brineguard-1",
+    "source": "creatures.png",
+    "cell": [
+      280,
+      842,
+      561,
+      1122
+    ],
+    "trim": [
+      46,
+      0,
+      281,
+      268
+    ]
+  },
+  {
+    "name": "brineguard-2",
+    "source": "creatures.png",
+    "cell": [
+      561,
+      842,
+      841,
+      1122
+    ],
+    "trim": [
+      53,
+      0,
+      219,
+      270
+    ]
+  },
+  {
+    "name": "brineguard-3",
+    "source": "creatures.png",
+    "cell": [
+      841,
+      842,
+      1122,
+      1122
+    ],
+    "trim": [
+      0,
+      0,
+      250,
+      269
+    ]
+  },
+  {
+    "name": "brineguard-4",
+    "source": "creatures.png",
+    "cell": [
+      1122,
+      842,
+      1402,
+      1122
+    ],
+    "trim": [
+      23,
+      0,
+      250,
+      268
+    ]
+  },
+  {
+    "name": "gump-quests",
+    "source": "panels.png",
+    "cell": [
+      0,
+      0,
+      724,
+      543
+    ],
+    "trim": [
+      41,
+      33,
+      713,
+      504
+    ]
+  },
+  {
+    "name": "gump-skills",
+    "source": "panels.png",
+    "cell": [
+      724,
+      0,
+      1448,
+      543
+    ],
+    "trim": [
+      19,
+      34,
+      690,
+      504
+    ]
+  },
+  {
+    "name": "gump-journal",
+    "source": "panels.png",
+    "cell": [
+      0,
+      543,
+      724,
+      1086
+    ],
+    "trim": [
+      36,
+      5,
+      713,
+      483
+    ]
+  },
+  {
+    "name": "gump-trade",
+    "source": "panels.png",
+    "cell": [
+      724,
+      543,
+      1448,
+      1086
+    ],
+    "trim": [
+      25,
+      7,
+      688,
+      480
+    ]
+  }
+]

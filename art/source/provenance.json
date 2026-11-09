@@ -1,0 +1,77 @@
+{
+  "assets": [
+    {
+      "path": "art/source/generated/humanoid.png",
+      "recoveredName": "Greyhaven Isometric Adventurer Parts Atlas.png",
+      "sha256": "caec2f7e2bd3b9fa8f20a260ae5965c6d01782ee0575757f76dac46af6697971",
+      "origin": "Original image generation in this conversation; recovered user attachment. No EA source art."
+    },
+    {
+      "path": "art/source/generated/armor.png",
+      "recoveredName": "Burgundy gambeson cutout parts sheet.png",
+      "sha256": "45c50b89da316290b4f5af80f773d5609ab2a0ea567c19538e12974f118edc6d",
+      "origin": "Original image generation in this conversation; recovered user attachment. No EA source art."
+    },
+    {
+      "path": "art/source/generated/equipment.png",
+      "recoveredName": "Greyhaven Equipment Sprite Atlas-1.png",
+      "sha256": "7159c27a5933bb6d7ba1bd0556e4ea68d8257e82384f25060088f0c8da7a05ae",
+      "origin": "Original image generation in this conversation; recovered user attachment. No EA source art."
+    },
+    {
+      "path": "art/source/generated/monster.png",
+      "recoveredName": "Greyhaven Tidehound Directional Parts Atlas-2.png",
+      "sha256": "79e517c6dd7a07bf752dc349420032fe26aa254aebc36fad8d6ae35e81ee371b",
+      "origin": "Original image generation in this conversation; recovered user attachment. No EA source art."
+    },
+    {
+      "path": "art/source/generated/environment.png",
+      "recoveredName": "Greyhaven Coastal Isometric Sprite Atlas-3.png",
+      "sha256": "6fadcbdc23ce5974f4ad3e4d579dadad5b0b261b2234b44b932fa67050bbcd9f",
+      "origin": "Original image generation in this conversation; recovered user attachment. No EA source art."
+    },
+    {
+      "path": "art/source/generated/icons.png",
+      "recoveredName": "Greyhaven relics and spell emblems.png",
+      "sha256": "ebb331e276b2724539ac89b51f47bd92b17f4e899b6229d78a55a799618d4b2a",
+      "origin": "Original image generation in this conversation; recovered user attachment. No EA source art."
+    },
+    {
+      "path": "art/source/generated/interface.png",
+      "recoveredName": "Greyhaven inventory, equipment, and spellbook panels-4.png",
+      "sha256": "d8f628050ce2d463b255ab993b90c32ccde2cc6930f397953d7069cc10db4a35",
+      "origin": "Original image generation in this conversation; full saved copy recovered after truncated attachment."
+    },
+    {
+      "path": "art/source/generated/furniture.png",
+      "sha256": "2d27ed14fd39c9d5e328155409a06d4d30946b7a240ef4a8e76cbed551ec88bf",
+      "origin": "Original built-in image generation for Greyhaven Phase 6; no EA source art.",
+      "promptFile": "art/source/generated/furniture-prompt.txt"
+    },
+    {
+      "path": "art/source/phase8/architecture.png",
+      "sha256": "ec1afa6916220fd5d5042c031755a11075b3dc00c7d62eb66cfd3ca43957deb6",
+      "origin": "Original built-in image generation for Greyhaven Phase 8; no EA source art.",
+      "promptFile": "art/source/phase8/architecture-prompt.txt"
+    },
+    {
+      "path": "art/source/phase8/creatures.png",
+      "sha256": "7c57be79e835acd85a9dc1240bc78e485d2d25c42281e98fc803040c60f0e71e",
+      "origin": "Original built-in image generation for Greyhaven Phase 8; no EA source art.",
+      "promptFile": "art/source/phase8/creatures-prompt.txt"
+    },
+    {
+      "path": "art/source/phase8/relics.png",
+      "sha256": "922b5603dc3f67e2f4aba964499e125dc882202457506e045a607865a1b134a5",
+      "origin": "Original built-in image generation for Greyhaven Phase 8; no EA source art.",
+      "promptFile": "art/source/phase8/relics-prompt.txt"
+    },
+    {
+      "path": "art/source/phase8/panels.png",
+      "sha256": "bffa5e53a7fb682bf4811b16df0a5a57d00c9e408de5ce3193738650c535031a",
+      "origin": "Original built-in image generation for Greyhaven Phase 8; no EA source art.",
+      "promptFile": "art/source/phase8/panels-prompt.txt"
+    }
+  ],
+  "licenseNote": "Original generated art; upstream code retains its existing licenses. Generation prompts from the lost workspace were not recovered."
+}

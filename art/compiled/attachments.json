@@ -1,0 +1,12 @@
+{
+  "pivot": [
+    64,
+    112
+  ],
+  "head": [
+    64,
+    32
+  ],
+  "hands": "Per-frame positions from shared shoulder rotation; identical transform used for arms and equipment.",
+  "mirroring": "Five authored facings. SW/W/NW mirror SE/E/NE around X=64. Asymmetric heraldry and physical handedness require future left-handed variants."
+}

@@ -1,0 +1,12 @@
+// SPDX-License-Identifier: MIT
+namespace Greyhaven.Content;
+public sealed class BootOptions {
+ public string? ProductionScene {get;init;}public bool ProductionSmoke {get;init;}
+ public string? AdventureScene {get;init;}public bool AdventureSmoke {get;init;}
+ public bool WorkshopSmoke {get;init;}public string? WorldScene {get;init;}
+ public string? SaveRoot {get;init;}public string? StartAt {get;init;}public string? ViewAt {get;init;}
+ public string Root {get;init;}="";public string? Map {get;init;}public string? Audit {get;init;}public string? Capture {get;init;}public string? Connect {get;init;}public string? Export {get;init;}public string? InventoryScene {get;init;}public bool InventorySmoke {get;init;}public bool CombatSmoke {get;init;}public bool CombatScene {get;init;}public bool Check {get;init;}public bool PauseOnBoot {get;init;}
+ public static string? Value(string[] args,string key){int i=Array.IndexOf(args,key);if(i<0)return null;if(i+1>=args.Length||args[i+1].StartsWith("--"))throw new ContentException("Missing value for "+key);return args[i+1];}
+ public static BootOptions Parse(string[] args){string? root=Value(args,"--content-root");if(root==null){root=new[]{AppContext.BaseDirectory,Path.Combine(AppContext.BaseDirectory,".."),Path.Combine(AppContext.BaseDirectory,"..","..")} .Select(Path.GetFullPath).FirstOrDefault(p=>File.Exists(Path.Combine(p,"content/original/package.json")));}if(root==null)throw new ContentException("Original content package not found. Extract the complete release or pass --content-root PATH.");return new(){Root=Path.GetFullPath(root),ProductionScene=Value(args,"--production-scene"),ProductionSmoke=args.Contains("--production-smoke"),AdventureScene=Value(args,"--adventure-scene"),AdventureSmoke=args.Contains("--adventure-smoke"),WorkshopSmoke=args.Contains("--workshop-smoke"),WorldScene=Value(args,"--world-scene"),SaveRoot=Value(args,"--save-root"),StartAt=Value(args,"--start-at"),ViewAt=Value(args,"--view-at"),Map=Value(args,"--map"),Audit=Value(args,"--audit"),Capture=Value(args,"--capture"),Connect=Value(args,"--connect"),Export=Value(args,"--export"),InventoryScene=Value(args,"--inventory-scene"),InventorySmoke=args.Contains("--inventory-smoke"),CombatSmoke=args.Contains("--combat-smoke"),CombatScene=args.Contains("--combat-scene"),Check=args.Contains("--check"),PauseOnBoot=args.Contains("--pause-on-boot")};}
+ public string DefaultAudit(string role)=>Audit??Path.Combine(Root,"UserData","Logs",role+"-files.json");
+}

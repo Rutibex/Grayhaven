@@ -1,0 +1,58 @@
+[
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/external/FNA",
+    "url": "https://github.com/FNA-XNA/FNA.git",
+    "commit": "1358793096d556388be798d24dc3728b2abb10ff",
+    "pinSource": "7deed693c3015c1e8b491006a6540f3a2b630471:external/FNA"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/external/FileEmbed",
+    "url": "https://github.com/SirCxyrtyx/FileEmbed.git",
+    "commit": "941fe67e520bb993d209bc46680b7ba4cb075471",
+    "pinSource": "7deed693c3015c1e8b491006a6540f3a2b630471:external/FileEmbed"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/external/FontStashSharp",
+    "url": "https://github.com/FontStashSharp/FontStashSharp.git",
+    "commit": "f5174020f980f369cbe6f5e9a642a8eb8d844b63",
+    "pinSource": "7deed693c3015c1e8b491006a6540f3a2b630471:external/FontStashSharp"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/external/MP3Sharp",
+    "url": "https://github.com/andreakarasho/MP3Sharp.git",
+    "commit": "9da1755e425f8766557ad6ff772289bde0525737",
+    "pinSource": "7deed693c3015c1e8b491006a6540f3a2b630471:external/MP3Sharp"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/external/Myra",
+    "url": "https://github.com/bittiez/Myra.git",
+    "commit": "4f3de3d2c01f36f5d8dcb4448a9e09e4b2e0eb3e",
+    "pinSource": "7deed693c3015c1e8b491006a6540f3a2b630471:external/Myra"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/external/XNAssets",
+    "url": "https://github.com/rds1983/XNAssets.git",
+    "commit": "361d27e213917927446df443d513a9b8f116cdc2",
+    "pinSource": "7deed693c3015c1e8b491006a6540f3a2b630471:external/XNAssets"
+  },
+  {
+    "component": "CentrED",
+    "path": "vendor/CentrED/external/FNA",
+    "url": "https://github.com/fna-xna/fna",
+    "commit": "40dc857a0991cc05e3bda500e604dc734952846e",
+    "pinSource": "50d23f7a8d7f247f7f53bee419c01942fcfd59fa:external/FNA"
+  },
+  {
+    "component": "CentrED",
+    "path": "vendor/CentrED/external/FontStashSharp",
+    "url": "https://github.com/FontStashSharp/FontStashSharp.git",
+    "commit": "3c887b62d8cc46d5d4ce6d5bdadc9ff48e2d3c21",
+    "pinSource": "50d23f7a8d7f247f7f53bee419c01942fcfd59fa:external/FontStashSharp"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "package": "greyhaven.original",
+  "version": "0.7.0",
+  "fingerprint": "b8b3c1badd104e5e4e7783d056b49ec3de803760583061325436209e2dfa2b20",
+  "canonicalMapHash": "646250bc27c409d25e7d2377885a9964603aca84ecc619d8d763358bc66c3abf",
+  "purpose": "Published Phase 7 identity for future explicit save compatibility; verify against the shipped package before adding to a successor."
+}

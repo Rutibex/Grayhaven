@@ -1,0 +1,15 @@
+{
+  "id": "greyhaven.core",
+  "version": "0.0.0",
+  "schemaVersion": 1,
+  "status": "foundation-only-no-runtime-assets",
+  "license": "UNDECIDED",
+  "movement": {
+    "authority": "tile",
+    "directions": 8,
+    "presentation": "interpolated"
+  },
+  "items": [],
+  "tiles": [],
+  "visuals": []
+}

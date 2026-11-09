@@ -1,0 +1,91 @@
+name: Build & Release
+
+on:
+  push:
+    branches: 
+      - "master"
+    paths-ignore:
+      - '**/README.md'
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+.[0-9]+"
+  pull_request:
+    branches: "*"
+    paths-ignore:
+      - '**/README.md'
+   
+env:
+  DOTNET_NOLOGO: false
+  DOTNET_CLI_TELEMETRY_OPTOUT: 1
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
+
+jobs:
+  build:
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      matrix:
+        runner: [ windows-latest, ubuntu-latest, macos-latest ]
+        project: [ {name: Server, extraArgs: ' -p:PublishSingleFile=true --self-contained false'}, {name: CentrED, extraArgs: ''} ]
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 10.0.x
+      - name: Install GitVersion
+        uses: gittools/actions/gitversion/setup@v3.0.0
+        with:
+          versionSpec: '6.0.x'
+      - name: Execute GitVersion
+        id: executeGitVersion
+        uses: gittools/actions/gitversion/execute@v3.0.0
+        with:
+          useConfigFile: 'true'
+          updateAssemblyInfo: 'true'
+          updateAssemblyInfoFilename: "${{ matrix.project.name }}/AssemblyInfo.cs"
+      - name: Publish
+        run: dotnet publish ${{ matrix.project.name }} -c Release -o release_${{ matrix.project.name }} -p:DebugType=None ${{ matrix.project.extraArgs }}
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.project.name }}-${{ runner.os }}-${{ runner.arch }}
+          path: ${{ github.workspace }}/release_${{ matrix.project.name }}/*
+    outputs: 
+      semVer: ${{ steps.executeGitVersion.outputs.assemblySemVer }}
+          
+  release:
+    runs-on: ubuntu-latest
+    needs: build
+    
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts/
+
+      - name: Install zip
+        uses: montudor/action-zip@v1
+          
+      - name: Create archives
+        run: |
+          cd artifacts
+          mkdir release
+          zip -qq -r release/Cedserver-Linux-x64-${{ needs.build.outputs.semVer }}.zip Server-Linux-X64/
+          zip -qq -r release/Cedserver-Windows-x64-${{ needs.build.outputs.semVer }}.zip Server-Windows-X64/
+          zip -qq -r release/Cedserver-macOS-arm64-${{ needs.build.outputs.semVer }}.zip Server-macOS-ARM64/
+          zip -qq -r release/CentrED-Linux-x64-${{ needs.build.outputs.semVer }}.zip CentrED-Linux-X64/
+          zip -qq -r release/CentrED-Windows-x64-${{ needs.build.outputs.semVer }}.zip CentrED-Windows-X64/
+          zip -qq -r release/CentrED-macOS-arm64-${{ needs.build.outputs.semVer }}.zip CentrED-macOS-ARM64/
+            
+      - name: Create Release
+        uses: ncipollo/release-action@v1.12.0
+        if: github.ref == 'refs/heads/master'
+        with:
+          artifacts: artifacts/release/*
+          generateReleaseNotes: true
+          makeLatest: true
+          tag: ${{ needs.build.outputs.semVer }}
+   

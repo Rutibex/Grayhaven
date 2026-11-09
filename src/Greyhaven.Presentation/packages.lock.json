@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net10.0": {
+      "FNA": {
+        "type": "Project"
+      },
+      "greyhaven.content": {
+        "type": "Project"
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+name: Foundation
+on: [workflow_dispatch]
+jobs:
+  baseline:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - run: python tools/project.py bootstrap
+      - run: python tools/project.py verify
+      - run: python tools/project.py validate-content
+      - run: python -m pip install -r tools/art/requirements.txt
+      - run: python tools/project.py art-validate
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node tests/test_proof_model.cjs
+      - run: python -m unittest discover -s tests -v
+      - run: python tools/project.py build all
+      - run: python tools/project.py original-build
+      - run: python tools/project.py content-check
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: foundation-build-logs
+          path: artifacts/logs

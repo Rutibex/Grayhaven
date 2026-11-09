@@ -1,0 +1,46 @@
+name: Bug report
+description: Report a problem in the playable Windows preview.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Launcher / startup
+        - Exploration / world
+        - Combat / spells
+        - Inventory / trading
+        - Quests / progression
+        - Audio / graphics
+        - Map editor
+        - Save / load
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Release and operating system
+      placeholder: "v0.8.0-preview, Windows 11 x64"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Start a new campaign ..."
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected vs actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional details
+      description: Do not upload private saves or personal logs to a public issue.

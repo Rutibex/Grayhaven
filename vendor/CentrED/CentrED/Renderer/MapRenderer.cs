@@ -1,0 +1,321 @@
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using CentrED.Lights;
+using CentrED.Map;
+using CentrED.Renderer.Effects;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using Vector3 = System.Numerics.Vector3;
+using Vector4 = System.Numerics.Vector4;
+
+namespace CentrED.Renderer;
+
+[Serializable]
+[StructLayout(LayoutKind.Sequential, Pack = 1)]
+public struct MapVertex : IVertexType
+{
+    VertexDeclaration IVertexType.VertexDeclaration
+    {
+        get { return VertexDeclaration; }
+    }
+
+    public Vector3 Position;
+    public Vector3 Texture;
+    public Vector4 Hue;
+    public Vector3 Normal;
+
+    public static readonly VertexDeclaration VertexDeclaration;
+
+    static MapVertex()
+    {
+        VertexDeclaration = new VertexDeclaration
+        (
+            [
+                new VertexElement(0, VertexElementFormat.Vector3, VertexElementUsage.Position, 0),
+                new VertexElement(12, VertexElementFormat.Vector3, VertexElementUsage.TextureCoordinate, 0),
+                new VertexElement(24, VertexElementFormat.Vector4, VertexElementUsage.TextureCoordinate, 0),
+                new VertexElement(40, VertexElementFormat.Vector3, VertexElementUsage.TextureCoordinate, 0)
+            ]
+        );
+    }
+
+    public MapVertex(Vector3 position, Vector3 texture, Vector4 hue, Vector3 normal)
+    {
+        Position = position;
+        Texture = texture;
+        Hue = hue;
+        Normal = normal;
+    }
+}
+
+public class MapRenderer
+{
+    #region Draw Batcher
+
+    private class DrawBatcher
+    {
+        private const int MAX_TILES_PER_BATCH = 4096;
+        private const int MAX_VERTICES = MAX_TILES_PER_BATCH * 4;
+        private const int MAX_INDICES = MAX_TILES_PER_BATCH * 6;
+
+        private readonly GraphicsDevice _gfxDevice;
+
+        private readonly VertexBuffer _vertexBuffer;
+        private readonly IndexBuffer _indexBuffer;
+
+        private readonly MapVertex[] _vertexInfo;
+        private static readonly short[] _indexData = GenerateIndexArray();
+
+        private MapEffect _effect;
+        private Texture2D _texture;
+        private Texture2D _huesTexture;
+        private RasterizerState _rasterizerState;
+        private SamplerState _samplerState;
+        private DepthStencilState _depthStencilState;
+        private BlendState _blendState;
+
+        private static short[] GenerateIndexArray()
+        {
+            short[] result = new short[MAX_INDICES];
+            for (int i = 0, j = 0; i < MAX_INDICES; i += 6, j += 4)
+            {
+                result[i] = (short)(j);
+                result[i + 1] = (short)(j + 1);
+                result[i + 2] = (short)(j + 2);
+                result[i + 3] = (short)(j + 3);
+                result[i + 4] = (short)(j + 2);
+                result[i + 5] = (short)(j + 1);
+            }
+            return result;
+        }
+
+        private bool _beginCalled = false;
+        private int _vertexCount = 0;
+
+        public DrawBatcher(GraphicsDevice device)
+        {
+            _gfxDevice = device;
+
+            _vertexInfo = new MapVertex[MAX_VERTICES];
+
+            _vertexBuffer = new DynamicVertexBuffer(device, typeof(MapVertex), MAX_VERTICES, BufferUsage.WriteOnly);
+
+            _indexBuffer = new IndexBuffer(device, IndexElementSize.SixteenBits, MAX_INDICES, BufferUsage.WriteOnly);
+
+            _indexBuffer.SetData(_indexData);
+        }
+
+        public void Begin
+        (
+            MapEffect effect,
+            Texture2D texture,
+            RasterizerState rasterizerState,
+            SamplerState samplerState,
+            DepthStencilState depthStencilState,
+            BlendState blendState
+        )
+        {
+            if (_beginCalled)
+                throw new InvalidOperationException("Mismatched Begin and End calls");
+
+            _beginCalled = true;
+            _vertexCount = 0;
+
+            _effect = effect;
+            _texture = texture;
+            _rasterizerState = rasterizerState;
+            _samplerState = samplerState;
+            _depthStencilState = depthStencilState;
+            _blendState = blendState;
+        }
+
+        private unsafe void Flush()
+        {
+            if (_vertexCount == 0)
+                return;
+
+            fixed (MapVertex* p = &_vertexInfo[0])
+            {
+                _vertexBuffer.SetDataPointerEXT
+                    (0, (IntPtr)p, Unsafe.SizeOf<MapVertex>() * _vertexCount, SetDataOptions.Discard);
+            }
+
+            _gfxDevice.SetVertexBuffer(_vertexBuffer);
+            _gfxDevice.Indices = _indexBuffer;
+
+            _gfxDevice.RasterizerState = _rasterizerState;
+            _gfxDevice.Textures[0] = _texture;
+            _gfxDevice.SamplerStates[0] = _samplerState;
+            _gfxDevice.Textures[1] = HuesManager.Instance.Texture;
+            _gfxDevice.SamplerStates[1] = SamplerState.PointClamp; //TODO: pass this from huesManager
+            _gfxDevice.Textures[2] = LightsManager.Instance.LightColorsTexture;
+            _gfxDevice.SamplerStates[2] = SamplerState.PointClamp; 
+            _gfxDevice.DepthStencilState = _depthStencilState;
+            _gfxDevice.BlendState = _blendState;
+
+            foreach (EffectPass pass in _effect.CurrentTechnique.Passes)
+            {
+                pass.Apply();
+                _gfxDevice.DrawIndexedPrimitives(PrimitiveType.TriangleList, 0, 0, _vertexCount, 0, _vertexCount / 2);
+            }
+
+            _vertexCount = 0;
+        }
+
+        public void End()
+        {
+            Flush();
+            _beginCalled = false;
+        }
+
+        public void DrawMapObject(MapObject o, Vector4 hueOverride)
+        {
+            if (_vertexCount + o.Vertices.Length >= MAX_VERTICES)
+                Flush();
+            
+            for (var i = 0; i < o.Vertices.Length; i++)
+            {
+                _vertexInfo[_vertexCount] = o.Vertices[i];
+                if (hueOverride != default)
+                {
+                    _vertexInfo[_vertexCount].Hue = hueOverride;
+                }
+                _vertexCount++;
+            }
+        }
+    }
+
+    #endregion
+
+    private readonly GraphicsDevice _gfxDevice;
+    private readonly GameWindow _window;
+
+    private readonly DrawBatcher[] _batchers = new DrawBatcher[8];
+    private readonly Texture2D[] _textures = new Texture2D[8];
+
+    private MapEffect _effect;
+    private RasterizerState _rasterizerState;
+    private SamplerState _samplerState;
+    private DepthStencilState _depthStencilState;
+    private BlendState _blendState;
+
+    private DrawBatcher GetBatcher(Texture2D texture)
+    {
+        for (int i = 0; i < _batchers.Length; i++)
+        {
+            if (_textures[i] == texture)
+            {
+                return _batchers[i];
+            }
+        }
+
+        for (int i = 0; i < _batchers.Length; i++)
+        {
+            if (_textures[i] == null)
+            {
+                _textures[i] = texture;
+                _batchers[i].Begin
+                (
+                    _effect,
+                    texture,
+                    _rasterizerState,
+                    _samplerState,
+                    _depthStencilState,
+                    _blendState
+                );
+                return _batchers[i];
+            }
+        }
+
+        /* TODO: Don't always evict the first one */
+        _batchers[0].End();
+        _textures[0] = texture;
+        _batchers[0].Begin
+        (
+            _effect,
+            texture,
+            _rasterizerState,
+            _samplerState,
+            _depthStencilState,
+            _blendState
+        );
+        return _batchers[0];
+    }
+
+    private bool _beginCalled = false;
+
+    public MapRenderer(GraphicsDevice device, GameWindow window)
+    {
+        _gfxDevice = device;
+        _window = window;
+
+        for (int i = 0; i < _batchers.Length; i++)
+        {
+            _batchers[i] = new DrawBatcher(device);
+        }
+    }
+
+    public void Begin
+    (
+        MapEffect effect,
+        RasterizerState rasterizerState,
+        SamplerState samplerState,
+        DepthStencilState depthStencilState,
+        BlendState blendState
+    )
+    {
+        if (_beginCalled)
+            throw new InvalidOperationException("Mismatched Begin and End calls");
+
+        _beginCalled = true;
+
+        _effect = effect;
+
+        _gfxDevice.Textures[0] = null;
+
+        _rasterizerState = rasterizerState;
+        _samplerState = samplerState;
+        _depthStencilState = depthStencilState;
+        _blendState = blendState;
+
+        for (int i = 0; i < _batchers.Length; i++)
+        {
+            _textures[i] = null;
+        }
+    }
+
+    public void SetRenderTarget(RenderTarget2D output)
+    {
+        SetRenderTarget(output, _window.ClientBounds);
+    }
+    
+    public void SetRenderTarget(RenderTarget2D output, Rectangle bounds)
+    {
+        _gfxDevice.SetRenderTarget(output);
+        _gfxDevice.Clear(Color.Black);
+        _gfxDevice.Viewport = new Viewport(0, 0, bounds.Width, bounds.Height);
+        _gfxDevice.ScissorRectangle = new Rectangle(0, 0, bounds.Width, bounds.Height);
+    }
+
+    private unsafe void Flush()
+    {
+        for (int i = 0; i < _batchers.Length; i++)
+        {
+            _batchers[i].End();
+            _textures[i] = null;
+        }
+    }
+
+    public unsafe void End()
+    {
+        Flush();
+
+        _beginCalled = false;
+    }
+
+    public void DrawMapObject(MapObject mapObject, Vector4 hueOverride)
+    {
+        var batcher = GetBatcher(mapObject.Texture);
+        batcher.DrawMapObject(mapObject, hueOverride);
+    }
+}

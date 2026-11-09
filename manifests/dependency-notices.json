@@ -1,0 +1,89 @@
+[
+  {
+    "dependency": "vendor/TazUO/external/FNA",
+    "commit": "1358793096d556388be798d24dc3728b2abb10ff",
+    "noticeFiles": [
+      "vendor/TazUO/external/FNA/licenses/LICENSE",
+      "vendor/TazUO/external/FNA/lib/FNA3D/LICENSE",
+      "vendor/TazUO/external/FNA/lib/FAudio/LICENSE",
+      "vendor/TazUO/external/FNA/lib/SDL2-CS/LICENSE",
+      "vendor/TazUO/external/FNA/lib/SDL3-CS/LICENSE",
+      "vendor/TazUO/external/FNA/lib/dav1dfile/LICENSE",
+      "vendor/TazUO/external/FNA/lib/FNA3D/MojoShader/LICENSE.txt",
+      "vendor/TazUO/external/FNA/lib/FAudio/csharp/LICENSE",
+      "vendor/TazUO/external/FNA/lib/Theorafile/csharp/LICENSE",
+      "vendor/TazUO/external/FNA/lib/Theorafile/licenses/LICENSE",
+      "vendor/TazUO/external/FNA/src/Graphics/Effect/StockEffects/LICENSE"
+    ],
+    "status": "notices located; release review required"
+  },
+  {
+    "dependency": "vendor/TazUO/external/FileEmbed",
+    "commit": "941fe67e520bb993d209bc46680b7ba4cb075471",
+    "noticeFiles": [
+      "vendor/TazUO/external/FileEmbed/LICENSE.txt"
+    ],
+    "status": "notices located; release review required"
+  },
+  {
+    "dependency": "vendor/TazUO/external/FontStashSharp",
+    "commit": "f5174020f980f369cbe6f5e9a642a8eb8d844b63",
+    "noticeFiles": [
+      "vendor/TazUO/external/FontStashSharp/LICENSE.txt",
+      "vendor/TazUO/external/FontStashSharp/samples/Fonts/license.txt"
+    ],
+    "status": "notices located; release review required"
+  },
+  {
+    "dependency": "vendor/TazUO/external/MP3Sharp",
+    "commit": "9da1755e425f8766557ad6ff772289bde0525737",
+    "noticeFiles": [
+      "vendor/TazUO/external/MP3Sharp/license.txt"
+    ],
+    "status": "notices located; release review required"
+  },
+  {
+    "dependency": "vendor/TazUO/external/Myra",
+    "commit": "4f3de3d2c01f36f5d8dcb4448a9e09e4b2e0eb3e",
+    "noticeFiles": [
+      "vendor/TazUO/external/Myra/License.TextCopy.txt",
+      "vendor/TazUO/external/Myra/LICENSE.MonoGame.Extended.txt",
+      "vendor/TazUO/external/Myra/LICENSE.txt"
+    ],
+    "status": "notices located; release review required"
+  },
+  {
+    "dependency": "vendor/TazUO/external/XNAssets",
+    "commit": "361d27e213917927446df443d513a9b8f116cdc2",
+    "noticeFiles": [
+      "vendor/TazUO/external/XNAssets/LICENSE"
+    ],
+    "status": "notices located; release review required"
+  },
+  {
+    "dependency": "vendor/CentrED/external/FNA",
+    "commit": "40dc857a0991cc05e3bda500e604dc734952846e",
+    "noticeFiles": [
+      "vendor/CentrED/external/FNA/licenses/LICENSE",
+      "vendor/CentrED/external/FNA/lib/FNA3D/LICENSE",
+      "vendor/CentrED/external/FNA/lib/FAudio/LICENSE",
+      "vendor/CentrED/external/FNA/lib/SDL2-CS/LICENSE",
+      "vendor/CentrED/external/FNA/lib/SDL3-CS/LICENSE",
+      "vendor/CentrED/external/FNA/lib/FNA3D/MojoShader/LICENSE.txt",
+      "vendor/CentrED/external/FNA/lib/FAudio/csharp/LICENSE",
+      "vendor/CentrED/external/FNA/lib/Theorafile/csharp/LICENSE",
+      "vendor/CentrED/external/FNA/lib/Theorafile/licenses/LICENSE",
+      "vendor/CentrED/external/FNA/src/Graphics/Effect/StockEffects/LICENSE"
+    ],
+    "status": "notices located; release review required"
+  },
+  {
+    "dependency": "vendor/CentrED/external/FontStashSharp",
+    "commit": "3c887b62d8cc46d5d4ce6d5bdadc9ff48e2d3c21",
+    "noticeFiles": [
+      "vendor/CentrED/external/FontStashSharp/LICENSE.txt",
+      "vendor/CentrED/external/FontStashSharp/samples/Fonts/license.txt"
+    ],
+    "status": "notices located; release review required"
+  }
+]

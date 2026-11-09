@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<PropertyGroup><OutputType>WinExe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>disable</Nullable><SelfContained>true</SelfContained><RuntimeIdentifier>win-x64</RuntimeIdentifier><EnableDefaultCompileItems>true</EnableDefaultCompileItems></PropertyGroup>
+<ItemGroup><ProjectReference Include="../../vendor/TazUO/external/FNA/FNA.Core.csproj"/><Compile Include="../../vendor/TazUO/src/ClassicUO.Client/Greyhaven/ArtProofGame.cs" Link="ArtProofGame.cs"/></ItemGroup>
+<ItemGroup Condition="$(RuntimeIdentifier.StartsWith('win'))"><Content Include="../../vendor/TazUO/external/x64/*.dll" Link="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest"/></ItemGroup>
+<ItemGroup Condition="$(RuntimeIdentifier.StartsWith('linux'))"><Content Include="../../vendor/TazUO/external/lib64/*.so*" Link="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest"/></ItemGroup>
+</Project>

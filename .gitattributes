@@ -1,2 +1,9 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Preserve supplied snapshot bytes; hashes are intentionally byte-exact.
+vendor/** -text
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.cmd text eol=crlf
+
+# Important: byte-exact pinned vendor sources must not be line-ending normalized
+vendor/** -text

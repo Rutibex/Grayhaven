@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net10.0": {
+      "SixLabors.ImageSharp": {
+        "type": "Transitive",
+        "resolved": "3.1.11",
+        "contentHash": "JfPLyigLthuE50yi6tMt7Amrenr/fA31t2CvJyhy/kQmfulIBAqo5T/YFUSRHtuYPXRSaUHygFeh6Qd933EoSw=="
+      },
+      "classicuo.utility": {
+        "type": "Project",
+        "dependencies": {
+          "FNA": "[1.0.0, )",
+          "SixLabors.ImageSharp": "[3.1.11, )"
+        }
+      },
+      "FNA": {
+        "type": "Project"
+      },
+      "mp3sharp": {
+        "type": "Project"
+      }
+    }
+  }
+}

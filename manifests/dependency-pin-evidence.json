@@ -1,0 +1,16 @@
+[
+  {
+    "component": "TazUO",
+    "observedUpstreamCommit": "7deed693c3015c1e8b491006a6540f3a2b630471",
+    "matchingFiles": 1805,
+    "differentFiles": [],
+    "note": "Pins selected from observed upstream tree; archive identity is independently recorded. Not claiming ZIP commit recovered."
+  },
+  {
+    "component": "CentrED",
+    "observedUpstreamCommit": "50d23f7a8d7f247f7f53bee419c01942fcfd59fa",
+    "matchingFiles": 240,
+    "differentFiles": [],
+    "note": "Pins selected from observed upstream tree; archive identity is independently recorded. Not claiming ZIP commit recovered."
+  }
+]

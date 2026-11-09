@@ -1,0 +1,26 @@
+[
+  {
+    "component": "ServUO",
+    "sourceArchive": "ServUO-pub57.zip",
+    "archiveSha256": "51bc5ed80ea358736421cf8d2fa0e4865eee375c0ef60dffe43dacc2a6877ae7",
+    "upstream": "https://github.com/ServUO/ServUO",
+    "archiveBranchLabel": "pub57",
+    "upstreamCommit": "unknown: ZIP has no git metadata"
+  },
+  {
+    "component": "TazUO",
+    "sourceArchive": "TazUO-main.zip",
+    "archiveSha256": "c0bb2f36b32b39d524753c9a9ec407241f9062aa62c4479c6ca1e09f448d9919",
+    "upstream": "https://github.com/PlayTazUO/TazUO",
+    "archiveBranchLabel": "main",
+    "upstreamCommit": "unknown: ZIP has no git metadata"
+  },
+  {
+    "component": "CentrED",
+    "sourceArchive": "centredsharp-master (2).zip",
+    "archiveSha256": "1bf6d8b577410452a5f3790c130cbbcff967f9c161b88bde547a77a9fb8ae532",
+    "upstream": "https://github.com/kaczy93/centredsharp",
+    "archiveBranchLabel": "master",
+    "upstreamCommit": "unknown: ZIP has no git metadata"
+  }
+]

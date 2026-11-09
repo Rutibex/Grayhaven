@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net10.0": {
+      "SixLabors.Fonts": {
+        "type": "Direct",
+        "requested": "[2.1.3, )",
+        "resolved": "2.1.3",
+        "contentHash": "ORWbZ5BHrC/LZvo+Y09MnoJq5VUKD85LsYALk+YI7CHFra+m5arCkz00IntDM6SrAiB22bvSdKtKmuCyHOKlqg=="
+      },
+      "Cyotek.Drawing.BitmapFont": {
+        "type": "Transitive",
+        "resolved": "2.0.4",
+        "contentHash": "iA6WehGVdMUuNbfsQQDq/Bt+mMd/OqHjiMUtKFLIQd/0pyYh4ehT7FEjTxN9/4OXNKQZsp9bAJgltP2nnswUJg=="
+      },
+      "FontStashSharp.Base": {
+        "type": "Transitive",
+        "resolved": "1.2.2",
+        "contentHash": "t2PT+/Sat9WPLm4AVYU1Aa/PrOgNQ4npSUGDHTYufXzLUHxrN3+BaRhAU0DZXkJNfuGCS5iKaQNopNXe9ES24g=="
+      },
+      "FontStashSharp.Rasterizers.StbTrueTypeSharp": {
+        "type": "Transitive",
+        "resolved": "1.2.2",
+        "contentHash": "OoXoGkxNMhyQeYR/wjeN6Bs8Guea7FisKXLcVJdeNtSYT+5iKxIh4ETi9x9OIk7GEQtNbE0yVhG3rb8RS04Kmg==",
+        "dependencies": {
+          "FontStashSharp.Base": "1.2.2",
+          "StbTrueTypeSharp": "1.26.12"
+        }
+      },
+      "SixLabors.ImageSharp": {
+        "type": "Transitive",
+        "resolved": "3.1.11",
+        "contentHash": "JfPLyigLthuE50yi6tMt7Amrenr/fA31t2CvJyhy/kQmfulIBAqo5T/YFUSRHtuYPXRSaUHygFeh6Qd933EoSw=="
+      },
+      "StbImageSharp": {
+        "type": "Transitive",
+        "resolved": "2.30.15",
+        "contentHash": "7QqbupVhz2kcFUPTgMw4iHR9rYDHGundzzee19Mwmd1typ2Lnv8EVJcLJxlkeBM2+4ex0NwsMtdbGSJctp1XCQ=="
+      },
+      "StbTrueTypeSharp": {
+        "type": "Transitive",
+        "resolved": "1.26.12",
+        "contentHash": "hCc6/OsfcPa5VsLECcEU2m78WOshBrKwK42nAodSm9Z5wH68f7n66SoiRLCdGCkDaqbWz2TlX4zYHIjogj1HJA=="
+      },
+      "classicuo.io": {
+        "type": "Project",
+        "dependencies": {
+          "ClassicUO.Utility": "[1.0.0, )",
+          "FNA": "[1.0.0, )",
+          "MP3Sharp": "[1.0.0, )"
+        }
+      },
+      "classicuo.utility": {
+        "type": "Project",
+        "dependencies": {
+          "FNA": "[1.0.0, )",
+          "SixLabors.ImageSharp": "[3.1.11, )"
+        }
+      },
+      "FNA": {
+        "type": "Project"
+      },
+      "FontStashSharp.FNA": {
+        "type": "Project",
+        "dependencies": {
+          "Cyotek.Drawing.BitmapFont": "[2.0.4, )",
+          "FNA": "[1.0.0, )",
+          "FontStashSharp.Base": "[1.2.2, )",
+          "FontStashSharp.Rasterizers.StbTrueTypeSharp": "[1.2.2, )",
+          "StbImageSharp": "[2.30.15, )"
+        }
+      },
+      "mp3sharp": {
+        "type": "Project"
+      }
+    }
+  }
+}

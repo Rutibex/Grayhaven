@@ -1,0 +1,7 @@
+<Project>
+  <!-- The upstream client writes generated API docs into its own source tree.
+       Keep the captured baseline immutable during foundation builds. -->
+  <Target Name="GenerateDocs" AfterTargets="Build" Condition="'$(MSBuildProjectName)' == 'ClassicUO.Client'">
+    <Message Text="Greyhaven: skipping upstream API documentation generation to preserve baseline sources." Importance="high" />
+  </Target>
+</Project>

@@ -1,0 +1,2006 @@
+[
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/Main.cs",
+    "line": 111,
+    "evidence": "public static string FindDataFile(string path)"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/Main.cs",
+    "line": 115,
+    "evidence": "throw new InvalidOperationException(\"Attempted to FindDataFile before DataDirectories list has been filled.\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/Main.cs",
+    "line": 135,
+    "evidence": "public static string FindDataFile(string format, params object[] args)"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/Main.cs",
+    "line": 137,
+    "evidence": "return FindDataFile(String.Format(format, args));"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/Mobile.cs",
+    "line": 1166,
+    "evidence": "string prefix = \"\"; // still needs to be defined due to cliloc. Only defined in PlayerMobile. BaseCreature and BaseVendor require the suffix for the title and use the same cliloc."
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/MultiData.cs",
+    "line": 219,
+    "evidence": "string multicollectionPath = Core.FindDataFile(\"MultiCollection.uop\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/MultiData.cs",
+    "line": 228,
+    "evidence": "string idxPath = Core.FindDataFile(\"multi.idx\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/MultiData.cs",
+    "line": 229,
+    "evidence": "string mulPath = Core.FindDataFile(\"multi.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/MultiData.cs",
+    "line": 239,
+    "evidence": "string vdPath = Core.FindDataFile(\"verdata.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/PromptExtensions.cs",
+    "line": 61,
+    "evidence": "Intern( prompt.MessageCliloc.ToString() ); // TODO: Is there a way to include args here?"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/TileData.cs",
+    "line": 198,
+    "evidence": "string filePath = Core.FindDataFile(\"tiledata.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/TileData.cs",
+    "line": 323,
+    "evidence": "Console.WriteLine(\"tiledata.mul was not found\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/TileMatrix.cs",
+    "line": 120,
+    "evidence": "string mapPath = Core.FindDataFile(\"map{0}.mul\", fileIndex);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/TileMatrix.cs",
+    "line": 128,
+    "evidence": "mapPath = Core.FindDataFile(\"map{0}LegacyMUL.uop\", fileIndex);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/TileMatrix.cs",
+    "line": 137,
+    "evidence": "string indexPath = Core.FindDataFile(\"staidx{0}.mul\", fileIndex);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/TileMatrix.cs",
+    "line": 145,
+    "evidence": "string staticsPath = Core.FindDataFile(\"statics{0}.mul\", fileIndex);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/TileMatrixPatch.cs",
+    "line": 42,
+    "evidence": "string mapDataPath = Core.FindDataFile(\"mapdif{0}.mul\", index);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/TileMatrixPatch.cs",
+    "line": 43,
+    "evidence": "string mapIndexPath = Core.FindDataFile(\"mapdifl{0}.mul\", index);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/TileMatrixPatch.cs",
+    "line": 50,
+    "evidence": "string staDataPath = Core.FindDataFile(\"stadif{0}.mul\", index);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/TileMatrixPatch.cs",
+    "line": 51,
+    "evidence": "string staIndexPath = Core.FindDataFile(\"stadifl{0}.mul\", index);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/TileMatrixPatch.cs",
+    "line": 52,
+    "evidence": "string staLookupPath = Core.FindDataFile(\"stadifi{0}.mul\", index);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/World.cs",
+    "line": 38,
+    "evidence": "public static readonly string MobileIndexPath = Path.Combine(\"Saves/Mobiles/\", \"Mobiles.idx\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/World.cs",
+    "line": 42,
+    "evidence": "public static readonly string ItemIndexPath = Path.Combine(\"Saves/Items/\", \"Items.idx\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/World.cs",
+    "line": 46,
+    "evidence": "public static readonly string GuildIndexPath = Path.Combine(\"Saves/Guilds/\", \"Guilds.idx\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Server/World.cs",
+    "line": 49,
+    "evidence": "public static readonly string DataIndexPath = Path.Combine(\"Saves/Customs/\", \"SaveData.idx\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/ASCIIFont.cs",
+    "line": 80,
+    "evidence": "///     Reads fonts.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/ASCIIFont.cs",
+    "line": 84,
+    "evidence": "string path = Files.GetFilePath(\"fonts.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/AnimationEdit.cs",
+    "line": 14,
+    "evidence": "private static FileIndex m_FileIndex = new FileIndex(\"Anim.idx\", \"Anim.mul\", 6);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/AnimationEdit.cs",
+    "line": 15,
+    "evidence": "private static FileIndex m_FileIndex2 = new FileIndex(\"Anim2.idx\", \"Anim2.mul\", -1);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/AnimationEdit.cs",
+    "line": 16,
+    "evidence": "private static FileIndex m_FileIndex3 = new FileIndex(\"Anim3.idx\", \"Anim3.mul\", -1);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/AnimationEdit.cs",
+    "line": 17,
+    "evidence": "private static FileIndex m_FileIndex4 = new FileIndex(\"Anim4.idx\", \"Anim4.mul\", -1);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/AnimationEdit.cs",
+    "line": 18,
+    "evidence": "private static FileIndex m_FileIndex5 = new FileIndex(\"Anim5.idx\", \"Anim5.mul\", -1);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/AnimationEdit.cs",
+    "line": 55,
+    "evidence": "m_FileIndex = new FileIndex(\"Anim.idx\", \"Anim.mul\", 6);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/AnimationEdit.cs",
+    "line": 56,
+    "evidence": "m_FileIndex2 = new FileIndex(\"Anim2.idx\", \"Anim2.mul\", -1);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/AnimationEdit.cs",
+    "line": 57,
+    "evidence": "m_FileIndex3 = new FileIndex(\"Anim3.idx\", \"Anim3.mul\", -1);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/AnimationEdit.cs",
+    "line": 58,
+    "evidence": "m_FileIndex4 = new FileIndex(\"Anim4.idx\", \"Anim4.mul\", -1);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/AnimationEdit.cs",
+    "line": 59,
+    "evidence": "m_FileIndex5 = new FileIndex(\"Anim5.idx\", \"Anim5.mul\", -1);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/AnimationEdit.cs",
+    "line": 363,
+    "evidence": "string idx = Path.Combine(path, filename + \".idx\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/AnimationEdit.cs",
+    "line": 364,
+    "evidence": "string mul = Path.Combine(path, filename + \".mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 32,
+    "evidence": "///     Fills bodyconv.def Tables"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 36,
+    "evidence": "string path = Files.GetFilePath(\"bodyconv.def\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 238,
+    "evidence": "///             <description>Anim.mul, Anim.idx (Standard)</description>"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 242,
+    "evidence": "///             <description>Anim2.mul, Anim2.idx (LBR)</description>"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 246,
+    "evidence": "///             <description>Anim3.mul, Anim3.idx (AOS)</description>"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 250,
+    "evidence": "///             <description>Anim4.mul, Anim4.idx (SE)</description>"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 254,
+    "evidence": "///             <description>Anim5.mul, Anim5.idx (ML)</description>"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 375,
+    "evidence": "private static FileIndex m_FileIndex = new FileIndex(\"Anim.idx\", \"Anim.mul\", 0x40000, 6);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 378,
+    "evidence": "private static FileIndex m_FileIndex2 = new FileIndex(\"Anim2.idx\", \"Anim2.mul\", 0x10000, -1);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 381,
+    "evidence": "private static FileIndex m_FileIndex3 = new FileIndex(\"Anim3.idx\", \"Anim3.mul\", 0x20000, -1);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 384,
+    "evidence": "private static FileIndex m_FileIndex4 = new FileIndex(\"Anim4.idx\", \"Anim4.mul\", 0x20000, -1);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 387,
+    "evidence": "private static FileIndex m_FileIndex5 = new FileIndex(\"Anim5.idx\", \"Anim5.mul\", 0x20000, -1);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 394,
+    "evidence": "///     Rereads AnimX files and bodyconv, body.def"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 398,
+    "evidence": "m_FileIndex = new FileIndex(\"Anim.idx\", \"Anim.mul\", 0x40000, 6);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 399,
+    "evidence": "m_FileIndex2 = new FileIndex(\"Anim2.idx\", \"Anim2.mul\", 0x10000, -1);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 400,
+    "evidence": "m_FileIndex3 = new FileIndex(\"Anim3.idx\", \"Anim3.mul\", 0x20000, -1);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 401,
+    "evidence": "m_FileIndex4 = new FileIndex(\"Anim4.idx\", \"Anim4.mul\", 0x20000, -1);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 402,
+    "evidence": "m_FileIndex5 = new FileIndex(\"Anim5.idx\", \"Anim5.mul\", 0x20000, -1);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 569,
+    "evidence": "///     Translates body (body.def)"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 588,
+    "evidence": "///     Translates body and hue (body.def)"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 917,
+    "evidence": "/// <returns>anim{0}.mul</returns>"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 925,
+    "evidence": "return \"anim.mul\";"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 929,
+    "evidence": "return String.Format(\"anim{0}.mul\", fileType);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animations.cs",
+    "line": 1043,
+    "evidence": "string filePath = Files.GetFilePath(\"body.def\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animdata.cs",
+    "line": 21,
+    "evidence": "///     Reads animdata.mul and fills <see cref=\"AnimData\" />"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animdata.cs",
+    "line": 26,
+    "evidence": "string path = Files.GetFilePath(\"animdata.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Animdata.cs",
+    "line": 99,
+    "evidence": "string FileName = Path.Combine(path, \"animdata.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Art.cs",
+    "line": 16,
+    "evidence": "\"Artidx.mul\", \"Art.mul\", \"artLegacyMUL.uop\", 0x10000 /*0x13FDC*/, 4, \".tga\", 0x13FDC, false);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Art.cs",
+    "line": 87,
+    "evidence": "///     ReReads Art.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Art.cs",
+    "line": 92,
+    "evidence": "\"Artidx.mul\", \"Art.mul\", \"artLegacyMUL.uop\", 0x10000 /*0x13FDC*/, 4, \".tga\", 0x13FDC, false);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Art.cs",
+    "line": 582,
+    "evidence": "string idx = Path.Combine(path, \"artidx.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Art.cs",
+    "line": 583,
+    "evidence": "string mul = Path.Combine(path, \"art.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/FileIndex.cs",
+    "line": 234,
+    "evidence": "* At the moment the only UOP file having entries with extra field is gumpartlegacy.uop,"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/FileIndex.cs",
+    "line": 239,
+    "evidence": "if (MulPath != null && MulPath.EndsWith(\".uop\"))"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 58,
+    "evidence": "\"anim.idx\", \"anim.mul\", \"anim2.idx\", \"anim2.mul\", \"anim3.idx\", \"anim3.mul\", \"anim4.idx\", \"anim4.mul\", \"anim5.idx\","
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 59,
+    "evidence": "\"anim5.mul\", \"animdata.mul\", \"art.mul\", \"artidx.mul\", \"artlegacymul.uop\", \"body.def\", \"bodyconv.def\", \"client.exe\","
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 60,
+    "evidence": "\"cliloc.custom1\", \"cliloc.custom2\", \"cliloc.deu\", \"cliloc.enu\", \"equipconv.def\", \"facet00.mul\", \"facet01.mul\","
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 61,
+    "evidence": "\"facet02.mul\", \"facet03.mul\", \"facet04.mul\", \"facet05.mul\", \"fonts.mul\", \"gump.def\", \"gumpart.mul\", \"gumpidx.mul\","
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 62,
+    "evidence": "\"gumpartlegacymul.uop\", \"hues.mul\", \"light.mul\", \"lightidx.mul\", \"map0.mul\", \"map1.mul\", \"map2.mul\", \"map3.mul\","
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 63,
+    "evidence": "\"map4.mul\", \"map5.mul\", \"map0legacymul.uop\", \"map1legacymul.uop\", \"map2legacymul.uop\", \"map3legacymul.uop\","
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 64,
+    "evidence": "\"map4legacymul.uop\", \"map5legacymul.uop\", \"mapdif0.mul\", \"mapdif1.mul\", \"mapdif2.mul\", \"mapdif3.mul\", \"mapdif4.mul\","
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 65,
+    "evidence": "\"mapdifl0.mul\", \"mapdifl1.mul\", \"mapdifl2.mul\", \"mapdifl3.mul\", \"mapdifl4.mul\", \"mobtypes.txt\", \"multi.idx\","
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 66,
+    "evidence": "\"multi.mul\", \"multimap.rle\", \"radarcol.mul\", \"skillgrp.mul\", \"skills.idx\", \"skills.mul\", \"sound.def\", \"sound.mul\","
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 67,
+    "evidence": "\"soundidx.mul\", \"soundlegacymul.uop\", \"speech.mul\", \"stadif0.mul\", \"stadif1.mul\", \"stadif2.mul\", \"stadif3.mul\","
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 68,
+    "evidence": "\"stadif4.mul\", \"stadifi0.mul\", \"stadifi1.mul\", \"stadifi2.mul\", \"stadifi3.mul\", \"stadifi4.mul\", \"stadifl0.mul\","
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 69,
+    "evidence": "\"stadifl1.mul\", \"stadifl2.mul\", \"stadifl3.mul\", \"stadifl4.mul\", \"staidx0.mul\", \"staidx1.mul\", \"staidx2.mul\","
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 70,
+    "evidence": "\"staidx3.mul\", \"staidx4.mul\", \"staidx5.mul\", \"statics0.mul\", \"statics1.mul\", \"statics2.mul\", \"statics3.mul\","
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 71,
+    "evidence": "\"statics4.mul\", \"statics5.mul\", \"texidx.mul\", \"texmaps.mul\", \"tiledata.mul\", \"unifont.mul\", \"unifont1.mul\","
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 72,
+    "evidence": "\"unifont2.mul\", \"unifont3.mul\", \"unifont4.mul\", \"unifont5.mul\", \"unifont6.mul\", \"unifont7.mul\", \"unifont8.mul\","
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 73,
+    "evidence": "\"unifont9.mul\", \"unifont10.mul\", \"unifont11.mul\", \"unifont12.mul\", \"uotd.exe\", \"verdata.mul\""
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 370,
+    "evidence": "return CompareMD5(GetFilePath(String.Format(\"{0}.mul\", what)), hashold);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 382,
+    "evidence": "///     Checks if map1.mul exists and sets <see cref=\"Ultima.Map\" />"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Files.cs",
+    "line": 386,
+    "evidence": "if (GetFilePath(\"map1.mul\") != null)"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Gumps.cs",
+    "line": 14,
+    "evidence": "\"Gumpidx.mul\", \"Gumpart.mul\", \"gumpartLegacyMUL.uop\", 0xFFFF, 12, \".tga\", -1, true);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Gumps.cs",
+    "line": 45,
+    "evidence": "m_FileIndex = new FileIndex(\"Gumpidx.mul\", \"Gumpart.mul\", \"gumpartLegacyMUL.uop\", 12, -1, \".tga\", -1, true);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Gumps.cs",
+    "line": 450,
+    "evidence": "string idx = Path.Combine(path, \"Gumpidx.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Gumps.cs",
+    "line": 451,
+    "evidence": "string mul = Path.Combine(path, \"Gumpart.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Hues.cs",
+    "line": 24,
+    "evidence": "///     Reads hues.mul and fills <see cref=\"List\" />"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Hues.cs",
+    "line": 28,
+    "evidence": "string path = Files.GetFilePath(\"hues.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Hues.cs",
+    "line": 82,
+    "evidence": "string mul = Path.Combine(path, \"hues.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Light.cs",
+    "line": 11,
+    "evidence": "private static FileIndex m_FileIndex = new FileIndex(\"lightidx.mul\", \"light.mul\", 100, -1);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Light.cs",
+    "line": 17,
+    "evidence": "///     ReReads light.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Light.cs",
+    "line": 21,
+    "evidence": "m_FileIndex = new FileIndex(\"lightidx.mul\", \"light.mul\", 100, -1);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Light.cs",
+    "line": 32,
+    "evidence": "string idxPath = Files.GetFilePath(\"lightidx.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Light.cs",
+    "line": 197,
+    "evidence": "string idx = Path.Combine(path, \"lightidx.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Light.cs",
+    "line": 198,
+    "evidence": "string mul = Path.Combine(path, \"light.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Map.cs",
+    "line": 573,
+    "evidence": "string indexPath = Files.GetFilePath(\"staidx{0}.mul\", map.FileIndex);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Map.cs",
+    "line": 586,
+    "evidence": "string staticsPath = Files.GetFilePath(\"statics{0}.mul\", map.FileIndex);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Map.cs",
+    "line": 603,
+    "evidence": "string idx = Path.Combine(path, String.Format(\"staidx{0}.mul\", map.FileIndex));"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Map.cs",
+    "line": 604,
+    "evidence": "string mul = Path.Combine(path, String.Format(\"statics{0}.mul\", map.FileIndex));"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Map.cs",
+    "line": 818,
+    "evidence": "string mapPath = Files.GetFilePath(\"map{0}.mul\", map);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Map.cs",
+    "line": 834,
+    "evidence": "string mul = Path.Combine(path, String.Format(\"map{0}.mul\", map));"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/MultiMap.cs",
+    "line": 20,
+    "evidence": "string path = Files.GetFilePath(\"Multimap.rle\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/MultiMap.cs",
+    "line": 154,
+    "evidence": "///     reads facet0*.mul into Bitmap"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/MultiMap.cs",
+    "line": 161,
+    "evidence": "string path = Files.GetFilePath(String.Format(\"facet0{0}.mul\", id));"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/MultiMap.cs",
+    "line": 204,
+    "evidence": "///     Stores Image into facet.mul format"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Multis.cs",
+    "line": 16,
+    "evidence": "private static FileIndex m_FileIndex = new FileIndex(\"Multi.idx\", \"Multi.mul\", 0x2000, 14);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Multis.cs",
+    "line": 31,
+    "evidence": "///     ReReads multi.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Multis.cs",
+    "line": 35,
+    "evidence": "m_FileIndex = new FileIndex(\"Multi.idx\", \"Multi.mul\", 0x2000, 14);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Multis.cs",
+    "line": 166,
+    "evidence": "string idx = String.Format(\"{0}.idx\", root);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Multis.cs",
+    "line": 327,
+    "evidence": "string idx = Path.Combine(path, \"multi.idx\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Multis.cs",
+    "line": 328,
+    "evidence": "string mul = Path.Combine(path, \"multi.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/RadarCol.cs",
+    "line": 51,
+    "evidence": "string path = Files.GetFilePath(\"radarcol.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/SkillGroups.cs",
+    "line": 33,
+    "evidence": "string path = Files.GetFilePath(\"skillgrp.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/SkillGroups.cs",
+    "line": 94,
+    "evidence": "string mul = Path.Combine(path, \"skillgrp.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Skills.cs",
+    "line": 11,
+    "evidence": "private static FileIndex m_FileIndex = new FileIndex(\"skills.idx\", \"skills.mul\", 16);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Skills.cs",
+    "line": 38,
+    "evidence": "///     ReReads skills.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Skills.cs",
+    "line": 42,
+    "evidence": "m_FileIndex = new FileIndex(\"skills.idx\", \"skills.mul\", 16);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Skills.cs",
+    "line": 99,
+    "evidence": "string idx = Path.Combine(path, \"skills.idx\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Skills.cs",
+    "line": 100,
+    "evidence": "string mul = Path.Combine(path, \"skills.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Sound.cs",
+    "line": 44,
+    "evidence": "m_FileIndex = new FileIndex(\"soundidx.mul\", \"sound.mul\", \"soundLegacyMUL.uop\", 0xFFF, 8, \".dat\", -1, false);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Sound.cs",
+    "line": 50,
+    "evidence": "string path = Files.GetFilePath(\"Sound.def\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Sound.cs",
+    "line": 84,
+    "evidence": "///     Returns <see cref=\"UOSound\" /> of ID with bool translated in .def"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Sound.cs",
+    "line": 146,
+    "evidence": "if (!translated) // no .def definition"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Sound.cs",
+    "line": 287,
+    "evidence": "string idx = Path.Combine(path, \"soundidx.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Sound.cs",
+    "line": 288,
+    "evidence": "string mul = Path.Combine(path, \"sound.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/SpeechList.cs",
+    "line": 25,
+    "evidence": "///     Loads speech.mul in <see cref=\"SpeechList.Entries\" />"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/SpeechList.cs",
+    "line": 29,
+    "evidence": "string path = Files.GetFilePath(\"speech.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/SpeechList.cs",
+    "line": 70,
+    "evidence": "///     Saves speech.mul to <see cref=\"FileName\" />"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/StringList.cs",
+    "line": 30,
+    "evidence": "LoadEntry(Files.GetFilePath(String.Format(\"cliloc.{0}\", language)));"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Textures.cs",
+    "line": 14,
+    "evidence": "private static FileIndex m_FileIndex = new FileIndex(\"Texidx.mul\", \"Texmaps.mul\", 0x4000, 10);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Textures.cs",
+    "line": 36,
+    "evidence": "m_FileIndex = new FileIndex(\"Texidx.mul\", \"Texmaps.mul\", 0x4000, 10);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Textures.cs",
+    "line": 194,
+    "evidence": "string idx = Path.Combine(path, \"texidx.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Textures.cs",
+    "line": 195,
+    "evidence": "string mul = Path.Combine(path, \"texmaps.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileData.cs",
+    "line": 864,
+    "evidence": "string filePath = Files.GetFilePath(\"tiledata.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileData.cs",
+    "line": 947,
+    "evidence": "///     Saves <see cref=\"LandData\" /> and <see cref=\"ItemData\" /> to tiledata.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrix.cs",
+    "line": 80,
+    "evidence": "mapPath = Files.GetFilePath(\"map{0}.mul\", fileIndex);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrix.cs",
+    "line": 84,
+    "evidence": "mapPath = Files.GetFilePath(\"map{0}LegacyMUL.uop\", fileIndex);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrix.cs",
+    "line": 87,
+    "evidence": "if (mapPath != null && mapPath.EndsWith(\".uop\"))"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrix.cs",
+    "line": 94,
+    "evidence": "mapPath = Path.Combine(path, String.Format(\"map{0}.mul\", fileIndex));"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrix.cs",
+    "line": 98,
+    "evidence": "mapPath = Path.Combine(path, String.Format(\"map{0}LegacyMUL.uop\", fileIndex));"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrix.cs",
+    "line": 105,
+    "evidence": "else if (mapPath != null && mapPath.EndsWith(\".uop\"))"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrix.cs",
+    "line": 113,
+    "evidence": "indexPath = Files.GetFilePath(\"staidx{0}.mul\", fileIndex);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrix.cs",
+    "line": 117,
+    "evidence": "indexPath = Path.Combine(path, String.Format(\"staidx{0}.mul\", fileIndex));"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrix.cs",
+    "line": 126,
+    "evidence": "staticsPath = Files.GetFilePath(\"statics{0}.mul\", fileIndex);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrix.cs",
+    "line": 130,
+    "evidence": "staticsPath = Path.Combine(path, String.Format(\"statics{0}.mul\", fileIndex));"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrixPatch.cs",
+    "line": 102,
+    "evidence": "mapDataPath = Files.GetFilePath(\"mapdif{0}.mul\", index);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrixPatch.cs",
+    "line": 103,
+    "evidence": "mapIndexPath = Files.GetFilePath(\"mapdifl{0}.mul\", index);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrixPatch.cs",
+    "line": 107,
+    "evidence": "mapDataPath = Path.Combine(path, String.Format(\"mapdif{0}.mul\", index));"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrixPatch.cs",
+    "line": 112,
+    "evidence": "mapIndexPath = Path.Combine(path, String.Format(\"mapdifl{0}.mul\", index));"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrixPatch.cs",
+    "line": 128,
+    "evidence": "staDataPath = Files.GetFilePath(\"stadif{0}.mul\", index);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrixPatch.cs",
+    "line": 129,
+    "evidence": "staIndexPath = Files.GetFilePath(\"stadifl{0}.mul\", index);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrixPatch.cs",
+    "line": 130,
+    "evidence": "staLookupPath = Files.GetFilePath(\"stadifi{0}.mul\", index);"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrixPatch.cs",
+    "line": 134,
+    "evidence": "staDataPath = Path.Combine(path, String.Format(\"stadif{0}.mul\", index));"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrixPatch.cs",
+    "line": 139,
+    "evidence": "staIndexPath = Path.Combine(path, String.Format(\"stadifl{0}.mul\", index));"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/TileMatrixPatch.cs",
+    "line": 144,
+    "evidence": "staLookupPath = Path.Combine(path, String.Format(\"stadifi{0}.mul\", index));"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/UnicodeFont.cs",
+    "line": 154,
+    "evidence": "\"unifont.mul\", \"unifont1.mul\", \"unifont2.mul\", \"unifont3.mul\", \"unifont4.mul\", \"unifont5.mul\", \"unifont6.mul\","
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/UnicodeFont.cs",
+    "line": 155,
+    "evidence": "\"unifont7.mul\", \"unifont8.mul\", \"unifont9.mul\", \"unifont10.mul\", \"unifont11.mul\", \"unifont12.mul\""
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/UnicodeFont.cs",
+    "line": 166,
+    "evidence": "///     Reads unifont*.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 6,
+    "evidence": "//0 - map0.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 7,
+    "evidence": "//1 - staidx0.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 8,
+    "evidence": "//2 - statics0.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 9,
+    "evidence": "//3 - artidx.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 10,
+    "evidence": "//4 - art.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 11,
+    "evidence": "//5 - anim.idx"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 12,
+    "evidence": "//6 - anim.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 13,
+    "evidence": "//7 - soundidx.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 14,
+    "evidence": "//8 - sound.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 15,
+    "evidence": "//9 - texidx.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 16,
+    "evidence": "//10 - texmaps.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 17,
+    "evidence": "//11 - gumpidx.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 18,
+    "evidence": "//12 - gumpart.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 19,
+    "evidence": "//13 - multi.idx"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 20,
+    "evidence": "//14 - multi.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 21,
+    "evidence": "//15 - skills.idx"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 22,
+    "evidence": "//16 - skills.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 23,
+    "evidence": "//30 - tiledata.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 24,
+    "evidence": "//31 - animdata.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Ultima/Verdata.cs",
+    "line": 42,
+    "evidence": "path = Files.GetFilePath(\"verdata.mul\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Scripts/Misc/ClientVerification.cs",
+    "line": 68,
+    "evidence": "string path = Core.FindDataFile(\"client.exe\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Scripts/Misc/CrashGuard.cs",
+    "line": 146,
+    "evidence": "CopyFile(rootOrigin, rootBackup, \"Items/Items.idx\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Scripts/Misc/CrashGuard.cs",
+    "line": 150,
+    "evidence": "CopyFile(rootOrigin, rootBackup, \"Mobiles/Mobiles.idx\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Scripts/Misc/CrashGuard.cs",
+    "line": 154,
+    "evidence": "CopyFile(rootOrigin, rootBackup, \"Guilds/Guilds.idx\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Scripts/Misc/CrashGuard.cs",
+    "line": 157,
+    "evidence": "CopyFile(rootOrigin, rootBackup, \"Regions/Regions.idx\");"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Scripts/Misc/DataPath.cs",
+    "line": 47,
+    "evidence": "* Multi.idx"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Scripts/Misc/DataPath.cs",
+    "line": 48,
+    "evidence": "* Multi.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Scripts/Misc/DataPath.cs",
+    "line": 49,
+    "evidence": "* VerData.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Scripts/Misc/DataPath.cs",
+    "line": 50,
+    "evidence": "* TileData.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Scripts/Misc/DataPath.cs",
+    "line": 51,
+    "evidence": "* Map*.mul or Map*LegacyMUL.uop"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Scripts/Misc/DataPath.cs",
+    "line": 52,
+    "evidence": "* StaIdx*.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Scripts/Misc/DataPath.cs",
+    "line": 53,
+    "evidence": "* Statics*.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Scripts/Misc/DataPath.cs",
+    "line": 54,
+    "evidence": "* MapDif*.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Scripts/Misc/DataPath.cs",
+    "line": 55,
+    "evidence": "* MapDifL*.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Scripts/Misc/DataPath.cs",
+    "line": 56,
+    "evidence": "* StaDif*.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Scripts/Misc/DataPath.cs",
+    "line": 57,
+    "evidence": "* StaDifL*.mul"
+  },
+  {
+    "component": "ServUO",
+    "path": "vendor/ServUO/Scripts/Misc/DataPath.cs",
+    "line": 58,
+    "evidence": "* StaDifI*.mul"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/AnimDataLoader.cs",
+    "line": 24,
+    "evidence": "string path = FileManager.GetUOFilePath(\"animdata.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/AnimationsLoader.cs",
+    "line": 24,
+    "evidence": "/// Expects .mul and .idx anim files to be in the same location. This should return a path, not the final file."
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/AnimationsLoader.cs",
+    "line": 25,
+    "evidence": "/// It will add anim#.mul and anim#.idx to this path."
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/AnimationsLoader.cs",
+    "line": 77,
+    "evidence": "string pathmul = FileManager.GetUOFilePath(\"anim\" + (animIndex == 0 ? string.Empty : (animIndex + 1).ToString()) + \".mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/AnimationsLoader.cs",
+    "line": 78,
+    "evidence": "string pathidx = FileManager.GetUOFilePath(\"anim\" + (animIndex == 0 ? string.Empty : (animIndex + 1).ToString()) + \".idx\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/AnimationsLoader.cs",
+    "line": 89,
+    "evidence": "string pathmul = Path.Combine(muullocation, \"anim\" + (i == 0 ? string.Empty : (i + 1).ToString()) + \".mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/AnimationsLoader.cs",
+    "line": 90,
+    "evidence": "string pathidx = Path.Combine(muullocation, \"anim\" + (i == 0 ? string.Empty : (i + 1).ToString()) + \".idx\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/AnimationsLoader.cs",
+    "line": 108,
+    "evidence": "string pathuop = FileManager.GetUOFilePath($\"AnimationFrame{i + 1}.uop\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/AnimationsLoader.cs",
+    "line": 126,
+    "evidence": "string path = FileManager.GetUOFilePath(\"mobtypes.txt\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/AnimationsLoader.cs",
+    "line": 206,
+    "evidence": "string file = FileManager.GetUOFilePath(\"Anim1.def\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/AnimationsLoader.cs",
+    "line": 228,
+    "evidence": "file = FileManager.GetUOFilePath(\"Anim2.def\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/AnimationsLoader.cs",
+    "line": 501,
+    "evidence": "string file = FileManager.GetUOFilePath(\"Equipconv.def\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/AnimationsLoader.cs",
+    "line": 548,
+    "evidence": "string file = FileManager.GetUOFilePath(\"Bodyconv.def\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/AnimationsLoader.cs",
+    "line": 654,
+    "evidence": "string file = FileManager.GetUOFilePath(\"Body.def\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/AnimationsLoader.cs",
+    "line": 698,
+    "evidence": "string file = FileManager.GetUOFilePath(\"Corpse.def\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/AnimationsLoader.cs",
+    "line": 740,
+    "evidence": "string animationSequencePath = FileManager.GetUOFilePath(\"AnimationSequence.uop\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/AnimationsLoader.cs",
+    "line": 744,
+    "evidence": "Log.Warn(\"AnimationSequence.uop not found\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/AnimationsLoader.cs",
+    "line": 1354,
+    "evidence": "// we dont ignore here, might be the AnimationSequence.uop that changes the group"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/ArtLoader.cs",
+    "line": 31,
+    "evidence": "string filePath = FileManager.GetUOFilePath(\"artLegacyMUL.uop\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/ArtLoader.cs",
+    "line": 39,
+    "evidence": "filePath = FileManager.GetUOFilePath(\"art.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/ArtLoader.cs",
+    "line": 40,
+    "evidence": "string idxPath = FileManager.GetUOFilePath(\"artidx.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/ArtLoader.cs",
+    "line": 51,
+    "evidence": "\"Art files not found. Expected 'artLegacyMUL.uop' or \" +"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/ArtLoader.cs",
+    "line": 52,
+    "evidence": "\"'art.mul' + 'artidx.mul' in the UO data directory: \" +"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/ClilocLoader.cs",
+    "line": 69,
+    "evidence": "_cliloc = $\"Cliloc.{lang}\";"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/ClilocLoader.cs",
+    "line": 72,
+    "evidence": "if (!File.Exists(FileManager.GetUOFilePath(_cliloc)))"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/ClilocLoader.cs",
+    "line": 74,
+    "evidence": "Log.Warn($\"'{_cliloc}' not found. Rolled back to Cliloc.enu\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/ClilocLoader.cs",
+    "line": 76,
+    "evidence": "_cliloc = \"Cliloc.enu\";"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/ClilocLoader.cs",
+    "line": 86,
+    "evidence": "_cliloc = \"Cliloc.enu\";"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/ClilocLoader.cs",
+    "line": 89,
+    "evidence": "string path = FileManager.GetUOFilePath(_cliloc);"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/ClilocLoader.cs",
+    "line": 97,
+    "evidence": "if (string.Compare(_cliloc, \"cliloc.enu\", StringComparison.InvariantCultureIgnoreCase) != 0)"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/ClilocLoader.cs",
+    "line": 99,
+    "evidence": "string enupath = FileManager.GetUOFilePath(\"Cliloc.enu\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/ClilocLoader.cs",
+    "line": 259,
+    "evidence": "var sb = new ValueStringBuilder(baseCliloc.AsSpan());"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/FontsLoader.cs",
+    "line": 92,
+    "evidence": "var fonts = new UOFileMul(FileManager.GetUOFilePath(\"fonts.mul\"));"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/FontsLoader.cs",
+    "line": 96,
+    "evidence": "string path = FileManager.GetUOFilePath("
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/FontsLoader.cs",
+    "line": 97,
+    "evidence": "\"unifont\" + (i == 0 ? \"\" : i.ToString()) + \".mul\""
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/GumpsLoader.cs",
+    "line": 27,
+    "evidence": "string path = FileManager.GetUOFilePath(\"gumpartLegacyMUL.uop\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/GumpsLoader.cs",
+    "line": 36,
+    "evidence": "path = FileManager.GetUOFilePath(\"gumpart.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/GumpsLoader.cs",
+    "line": 37,
+    "evidence": "string pathidx = FileManager.GetUOFilePath(\"gumpidx.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/GumpsLoader.cs",
+    "line": 41,
+    "evidence": "path = FileManager.GetUOFilePath(\"Gumpart.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/GumpsLoader.cs",
+    "line": 46,
+    "evidence": "pathidx = FileManager.GetUOFilePath(\"Gumpidx.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/GumpsLoader.cs",
+    "line": 56,
+    "evidence": "string pathdef = FileManager.GetUOFilePath(\"gump.def\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/HuesLoader.cs",
+    "line": 31,
+    "evidence": "string path = FileManager.GetUOFilePath(\"hues.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/HuesLoader.cs",
+    "line": 46,
+    "evidence": "path = FileManager.GetUOFilePath(\"radarcol.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/LightsLoader.cs",
+    "line": 22,
+    "evidence": "string path = FileManager.GetUOFilePath(\"light.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/LightsLoader.cs",
+    "line": 23,
+    "evidence": "string pathidx = FileManager.GetUOFilePath(\"lightidx.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MapLoader.cs",
+    "line": 141,
+    "evidence": "string path = FileManager.GetUOFilePath($\"map{i}LegacyMUL.uop\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MapLoader.cs",
+    "line": 150,
+    "evidence": "path = FileManager.GetUOFilePath($\"map{i}xLegacyMUL.uop\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MapLoader.cs",
+    "line": 163,
+    "evidence": "path = FileManager.GetUOFilePath($\"map{i}.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MapLoader.cs",
+    "line": 169,
+    "evidence": "path = FileManager.GetUOFilePath($\"map{i}x.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MapLoader.cs",
+    "line": 178,
+    "evidence": "path = FileManager.GetUOFilePath($\"mapdifl{i}.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MapLoader.cs",
+    "line": 183,
+    "evidence": "_mapDif[i] = new UOFileMul(FileManager.GetUOFilePath($\"mapdif{i}.mul\"));"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MapLoader.cs",
+    "line": 184,
+    "evidence": "_staDifl[i] = new UOFileMul(FileManager.GetUOFilePath($\"stadifl{i}.mul\"));"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MapLoader.cs",
+    "line": 185,
+    "evidence": "_staDifi[i] = new UOFileMul(FileManager.GetUOFilePath($\"stadifi{i}.mul\"));"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MapLoader.cs",
+    "line": 186,
+    "evidence": "_staDif[i] = new UOFileMul(FileManager.GetUOFilePath($\"stadif{i}.mul\"));"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MapLoader.cs",
+    "line": 190,
+    "evidence": "path = FileManager.GetUOFilePath($\"statics{i}.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MapLoader.cs",
+    "line": 196,
+    "evidence": "path = FileManager.GetUOFilePath($\"staidx{i}.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MapLoader.cs",
+    "line": 203,
+    "evidence": "path = FileManager.GetUOFilePath($\"statics{i}x.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MapLoader.cs",
+    "line": 209,
+    "evidence": "path = FileManager.GetUOFilePath($\"staidx{i}x.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MultiLoader.cs",
+    "line": 25,
+    "evidence": "string uopPath = FileManager.GetUOFilePath(\"MultiCollection.uop\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MultiLoader.cs",
+    "line": 33,
+    "evidence": "string path = FileManager.GetUOFilePath(\"multi.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MultiLoader.cs",
+    "line": 34,
+    "evidence": "string pathidx = FileManager.GetUOFilePath(\"multi.idx\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MultiLoader.cs",
+    "line": 45,
+    "evidence": "\"Multi files not found. Expected 'MultiCollection.uop' or \" +"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MultiLoader.cs",
+    "line": 46,
+    "evidence": "\"'multi.mul' + 'multi.idx' in the UO data directory: \" +"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MultiMapLoader.cs",
+    "line": 28,
+    "evidence": "string path = FileManager.GetUOFilePath(\"Multimap.rle\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MultiMapLoader.cs",
+    "line": 35,
+    "evidence": "_facets = Directory.GetFiles(FileManager.BasePath, \"*.mul\", SearchOption.TopDirectoryOnly)"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MultiMapLoader.cs",
+    "line": 36,
+    "evidence": ".Select(s => Regex.Match(s, \"facet0.*\\\\.mul\", RegexOptions.IgnoreCase))"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MultiMapLoader.cs",
+    "line": 56,
+    "evidence": "Log.Warn(\"MultiMap.rle is not loaded!\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MultiMapLoader.cs",
+    "line": 68,
+    "evidence": "Log.Warn(\"Failed to load bounds from MultiMap.rle\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/MultiMapLoader.cs",
+    "line": 75,
+    "evidence": "Log.Warn(\"Invalid bounds requested from MultiMap.rle\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/ProfessionLoader.cs",
+    "line": 65,
+    "evidence": "var file = new FileInfo(FileManager.GetUOFilePath(\"Prof.txt\"));"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/SkillsLoader.cs",
+    "line": 31,
+    "evidence": "string path = FileManager.GetUOFilePath(\"skills.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/SkillsLoader.cs",
+    "line": 32,
+    "evidence": "string pathidx = FileManager.GetUOFilePath(\"Skills.idx\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/SoundsLoader.cs",
+    "line": 31,
+    "evidence": "string path = FileManager.GetUOFilePath(\"soundLegacyMUL.uop\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/SoundsLoader.cs",
+    "line": 39,
+    "evidence": "path = FileManager.GetUOFilePath(\"sound.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/SoundsLoader.cs",
+    "line": 40,
+    "evidence": "string idxpath = FileManager.GetUOFilePath(\"soundidx.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/SoundsLoader.cs",
+    "line": 54,
+    "evidence": "string def = FileManager.GetUOFilePath(\"Sound.def\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/SoundsLoader.cs",
+    "line": 107,
+    "evidence": "path = FileManager.GetUOFilePath(FileManager.Version >= ClientVersion.CV_4011C ?  @\"Music/Digital/Config.txt\" : @\"Music/Config.txt\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/SpeechesLoader.cs",
+    "line": 25,
+    "evidence": "string path = FileManager.GetUOFilePath(\"speech.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/StringDictionary.cs",
+    "line": 34,
+    "evidence": "string path = FileManager.GetUOFilePath(\"string_dictionary.uop\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/TexmapsLoader.cs",
+    "line": 23,
+    "evidence": "string path = FileManager.GetUOFilePath(\"texmaps.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/TexmapsLoader.cs",
+    "line": 24,
+    "evidence": "string pathidx = FileManager.GetUOFilePath(\"texidx.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/TexmapsLoader.cs",
+    "line": 31,
+    "evidence": "string pathdef = FileManager.GetUOFilePath(\"TexTerr.def\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/TileArt.cs",
+    "line": 82,
+    "evidence": "string path = FileManager.GetUOFilePath(\"tileart.uop\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/TileArt.cs",
+    "line": 162,
+    "evidence": "Log.Info($\"tileart.uop v{version} is not supported.\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/TileDataLoader.cs",
+    "line": 25,
+    "evidence": "string path = FileManager.GetUOFilePath(\"tiledata.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/TileDataLoader.cs",
+    "line": 119,
+    "evidence": "//path = Path.Combine(FileManager.UoFolderPath, \"tileart.uop\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/UOFileManager.cs",
+    "line": 103,
+    "evidence": "public string GetUOFilePath(string file)"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/UOFileManager.cs",
+    "line": 146,
+    "evidence": "IsUOPInstallation = Version >= ClientVersion.CV_7000 && File.Exists(GetUOFilePath(\"MainMisc.uop\"));"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/UOFileManager.cs",
+    "line": 188,
+    "evidence": "Log.Trace($\"Use verdata.mul: {(useVerdata ? \"Yes\" : \"No\")}\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/UOFileManager.cs",
+    "line": 378,
+    "evidence": "string pathdef = GetUOFilePath(\"art.def\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 17,
+    "evidence": "string path = FileManager.GetUOFilePath(\"verdata.mul\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 40,
+    "evidence": "Log.Error($\"error while reading verdata.mul\\n{ex}\");"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 47,
+    "evidence": "//0 - map0.mul"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 48,
+    "evidence": "//1 - staidx0.mul"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 49,
+    "evidence": "//2 - statics0.mul"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 50,
+    "evidence": "//3 - artidx.mul"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 51,
+    "evidence": "//4 - art.mul"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 52,
+    "evidence": "//5 - anim.idx"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 53,
+    "evidence": "//6 - anim.mul"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 54,
+    "evidence": "//7 - soundidx.mul"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 55,
+    "evidence": "//8 - sound.mul"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 56,
+    "evidence": "//9 - texidx.mul"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 57,
+    "evidence": "//10 - texmaps.mul"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 58,
+    "evidence": "//11 - gumpidx.mul"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 59,
+    "evidence": "//12 - gumps.mul"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 60,
+    "evidence": "//13 - multi.idx"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 61,
+    "evidence": "//14 - multi.mul"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 62,
+    "evidence": "//15 - skills.idx"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 63,
+    "evidence": "//16 - skills.mul"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 64,
+    "evidence": "//30 - tiledata.mul"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.Assets/VerdataLoader.cs",
+    "line": 65,
+    "evidence": "//31 - animdata.mul"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.IO/UOFileMul.cs",
+    "line": 31,
+    "evidence": "e.File = this;   // .mul mmf address"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.IO/UOFileMul.cs",
+    "line": 32,
+    "evidence": "e.Offset = f.ReadUInt32(); // .idx offset"
+  },
+  {
+    "component": "TazUO",
+    "path": "vendor/TazUO/src/ClassicUO.IO/UOFileMul.cs",
+    "line": 33,
+    "evidence": "e.Length = f.ReadInt32();  // .idx length"
+  },
+  {
+    "component": "CentrED",
+    "path": "vendor/CentrED/CentrED/Blueprints/BlueprintManager.cs",
+    "line": 22,
+    "evidence": "var multisEntry = new BlueprintTreeEntry(\"multi.mul\", true, []);"
+  },
+  {
+    "component": "CentrED",
+    "path": "vendor/CentrED/CentrED/Blueprints/Readers/MultiNamesReader.cs",
+    "line": 7,
+    "evidence": "public const string FILE_NAME = \"Multi.mul.txt\";"
+  },
+  {
+    "component": "CentrED",
+    "path": "vendor/CentrED/CentrED/Blueprints/Readers/MultiNamesReader.cs",
+    "line": 36,
+    "evidence": "Console.WriteLine($\"Invalid multi.mul.txt name line {lineIdx}: {line}\");"
+  },
+  {
+    "component": "CentrED",
+    "path": "vendor/CentrED/CentrED/Map/MapManager.cs",
+    "line": 299,
+    "evidence": "var tiledataFile = Path.Combine(clientPath, \"tiledata.mul\");"
+  },
+  {
+    "component": "CentrED",
+    "path": "vendor/CentrED/Server/Config/ConfigRoot.cs",
+    "line": 15,
+    "evidence": "public string Tiledata { get; set; } = \"tiledata.mul\";"
+  },
+  {
+    "component": "CentrED",
+    "path": "vendor/CentrED/Server/Config/ConfigRoot.cs",
+    "line": 16,
+    "evidence": "public string Radarcol { get; set; } = \"radarcol.mul\";"
+  },
+  {
+    "component": "CentrED",
+    "path": "vendor/CentrED/Server/Config/ConfigRoot.cs",
+    "line": 17,
+    "evidence": "public string Hues { get; set; } = \"hues.mul\";"
+  },
+  {
+    "component": "CentrED",
+    "path": "vendor/CentrED/Server/Config/Map.cs",
+    "line": 7,
+    "evidence": "public string MapPath { get; set; } = \"map0.mul\";"
+  },
+  {
+    "component": "CentrED",
+    "path": "vendor/CentrED/Server/Config/Map.cs",
+    "line": 8,
+    "evidence": "public string StaIdx { get; set; } = \"staidx0.mul\";"
+  },
+  {
+    "component": "CentrED",
+    "path": "vendor/CentrED/Server/Config/Map.cs",
+    "line": 9,
+    "evidence": "public string Statics { get; set; } = \"statics0.mul\";"
+  },
+  {
+    "component": "CentrED",
+    "path": "vendor/CentrED/Server/Map/ServerLandscape.cs",
+    "line": 36,
+    "evidence": "IsUop = mapFile.Extension == \".uop\";"
+  },
+  {
+    "component": "CentrED",
+    "path": "vendor/CentrED/Server/Map/ServerLandscape.cs",
+    "line": 554,
+    "evidence": "using (var staidxBak = File.OpenWrite(\"staidxbak.mul\"))"
+  },
+  {
+    "component": "CentrED",
+    "path": "vendor/CentrED/Server/Map/ServerLandscape.cs",
+    "line": 560,
+    "evidence": "using (var staticsBak = File.OpenWrite(\"staticsbak.mul\"))"
+  },
+  {
+    "component": "CentrED",
+    "path": "vendor/CentrED/Server/Map/ServerLandscape.cs",
+    "line": 567,
+    "evidence": "using var staidxRead = File.OpenRead(\"staidxbak.mul\");"
+  },
+  {
+    "component": "CentrED",
+    "path": "vendor/CentrED/Server/Map/ServerLandscape.cs",
+    "line": 569,
+    "evidence": "using var staticsRead = File.OpenRead(\"staticsbak.mul\");"
+  }
+]

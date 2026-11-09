@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 1,
+  "policy": "append-only; domain-scoped; never renumber shipped mappings",
+  "mappings": []
+}

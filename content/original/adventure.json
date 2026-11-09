@@ -1,0 +1,299 @@
+{
+  "quests": [
+    {
+      "id": "quest.beacon",
+      "name": "The Light Below",
+      "giver": "npc.sera",
+      "recipient": "npc.sera",
+      "main": true,
+      "description": "The Broken Beacon once guided Greyhaven ships through the reef. Its lantern heart was taken into the Drowned Cellars. Ask Orrin about the old stonework, follow the north road, and recover the heart from the Lantern Keeper. The upper-vault key and lower-ward lever open the final chamber. Bring its light back to the beacon, then return to me.",
+      "completion": "The beacon burns again. Greyhaven names you Lantern Warden; the harbour can face the next dark tide.",
+      "fame": 450,
+      "karma": 250,
+      "objectives": [
+        {
+          "id": "smith",
+          "kind": "talk",
+          "target": "npc.orrin",
+          "text": "Ask Orrin about the beacon cellars",
+          "amount": 1
+        },
+        {
+          "id": "beacon",
+          "kind": "visit",
+          "target": "discover.beacon",
+          "text": "Follow the north road to the Broken Beacon",
+          "amount": 1
+        },
+        {
+          "id": "upper",
+          "kind": "visit",
+          "target": "cellar1.room1",
+          "text": "Enter the upper Drowned Cellars",
+          "amount": 1
+        },
+        {
+          "id": "key",
+          "kind": "collect",
+          "target": "world.item.cellar.key",
+          "text": "Carry the Brass Vault Key",
+          "amount": 1
+        },
+        {
+          "id": "lever",
+          "kind": "object",
+          "target": "cellar.lever",
+          "text": "Raise the Lower Ward portcullis",
+          "amount": 1
+        },
+        {
+          "id": "keeper",
+          "kind": "kill",
+          "target": "encounter.lower.boss",
+          "text": "Defeat the Lantern Keeper",
+          "amount": 1
+        },
+        {
+          "id": "heart",
+          "kind": "obtain",
+          "target": "quest.item.lantern-heart",
+          "text": "Recover the Lantern Heart",
+          "amount": 1
+        },
+        {
+          "id": "restore",
+          "kind": "restore",
+          "target": "stairs.beacon",
+          "text": "Install the heart at the Broken Beacon",
+          "amount": 1
+        }
+      ],
+      "rewards": [
+        {
+          "definition": "greyhaven.item.silver-marks",
+          "amount": 260
+        },
+        {
+          "definition": "greyhaven.item.mariner-greatblade",
+          "amount": 1
+        },
+        {
+          "definition": "greyhaven.item.healing-tonic",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": "quest.morrowwood",
+      "name": "The Morrowwood Road",
+      "giver": "npc.lena",
+      "recipient": "npc.lena",
+      "description": "Two tidehounds have claimed the western trail. Defeat the Morrowwood Tidehound and Trail Tidehound, then report to Lena at the east town gate. Clearing them will give the netmakers a safe route through the wood.",
+      "completion": "Lena records the cleared trail. The western road belongs to travellers again.",
+      "fame": 100,
+      "karma": 50,
+      "objectives": [
+        {
+          "id": "hound1",
+          "kind": "kill",
+          "target": "encounter.woods.hound1",
+          "text": "Defeat the Morrowwood Tidehound",
+          "amount": 1
+        },
+        {
+          "id": "hound2",
+          "kind": "kill",
+          "target": "encounter.woods.hound2",
+          "text": "Defeat the Trail Tidehound",
+          "amount": 1
+        }
+      ],
+      "rewards": [
+        {
+          "definition": "greyhaven.item.silver-marks",
+          "amount": 80
+        },
+        {
+          "definition": "greyhaven.item.healing-tonic",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": "quest.forge",
+      "name": "A Spark for the Anchor Forge",
+      "giver": "npc.orrin",
+      "recipient": "npc.orrin",
+      "description": "Orrin needs three tide crystals to temper a replacement beacon bracket. Carry them and mark them as quest items before returning. Marked supplies cannot be sold, thrown or dropped until you unmark them or turn them in.",
+      "completion": "Orrin fits the new bracket and pays for exactly three crystals. Any extra marked supplies are yours again.",
+      "fame": 75,
+      "karma": 40,
+      "objectives": [
+        {
+          "id": "crystals",
+          "kind": "obtain",
+          "target": "greyhaven.item.tide-crystal",
+          "text": "Mark and deliver three carried tide crystals",
+          "amount": 3
+        }
+      ],
+      "rewards": [
+        {
+          "definition": "greyhaven.item.silver-marks",
+          "amount": 90
+        },
+        {
+          "definition": "greyhaven.item.bandage",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "id": "quest.harbour",
+      "name": "Letters for the Harbour",
+      "giver": "npc.mara",
+      "recipient": "npc.cora",
+      "description": "Mara has a packet of letters for Cora at Gullhook Docks, south of town. Accept the packet, carry it to Cora, and choose the quest reward when you speak with her. The letters remain physical inventory, including after a death.",
+      "completion": "Cora tucks the letters into her coat. News from home is worth more than a fair tide.",
+      "fame": 50,
+      "karma": 40,
+      "objectives": [
+        {
+          "id": "letters",
+          "kind": "deliver",
+          "target": "quest.item.harbour-letter",
+          "text": "Carry Mara's letters to Cora at the docks",
+          "amount": 1
+        }
+      ],
+      "rewards": [
+        {
+          "definition": "greyhaven.item.silver-marks",
+          "amount": 40
+        }
+      ]
+    }
+  ],
+  "routines": [
+    {
+      "npcId": "npc.tomas",
+      "homeX": 109,
+      "homeY": 191,
+      "workX": 111,
+      "workY": 180,
+      "socialX": 74,
+      "socialY": 173
+    },
+    {
+      "npcId": "npc.ada",
+      "homeX": 69,
+      "homeY": 205,
+      "workX": 77,
+      "workY": 184,
+      "socialX": 75,
+      "socialY": 173
+    },
+    {
+      "npcId": "npc.brin",
+      "homeX": 109,
+      "homeY": 205,
+      "workX": 116,
+      "workY": 180,
+      "socialX": 73,
+      "socialY": 173
+    },
+    {
+      "npcId": "npc.pella",
+      "homeX": 66,
+      "homeY": 181,
+      "workX": 67,
+      "workY": 183,
+      "socialX": 72,
+      "socialY": 174
+    },
+    {
+      "npcId": "npc.ivo",
+      "homeX": 97,
+      "homeY": 181,
+      "workX": 94,
+      "workY": 182,
+      "socialX": 74,
+      "socialY": 174
+    },
+    {
+      "npcId": "npc.fen",
+      "homeX": 97,
+      "homeY": 230,
+      "workX": 96,
+      "workY": 228,
+      "socialX": 76,
+      "socialY": 173
+    },
+    {
+      "npcId": "npc.maeve",
+      "homeX": 118,
+      "homeY": 201,
+      "workX": 115,
+      "workY": 201,
+      "socialX": 73,
+      "socialY": 174
+    }
+  ],
+  "trainers": [
+    {
+      "npcId": "npc.orrin",
+      "skill": "swords",
+      "value": 1000
+    },
+    {
+      "npcId": "npc.orrin",
+      "skill": "tactics",
+      "value": 1000
+    },
+    {
+      "npcId": "npc.orrin",
+      "skill": "anatomy",
+      "value": 1000
+    },
+    {
+      "npcId": "npc.orrin",
+      "skill": "parry",
+      "value": 1000
+    },
+    {
+      "npcId": "npc.orrin",
+      "skill": "wrestling",
+      "value": 1000
+    },
+    {
+      "npcId": "npc.orrin",
+      "skill": "throwing",
+      "value": 1000
+    },
+    {
+      "npcId": "npc.sera",
+      "skill": "magery",
+      "value": 1000
+    },
+    {
+      "npcId": "npc.sera",
+      "skill": "evalint",
+      "value": 1000
+    },
+    {
+      "npcId": "npc.sera",
+      "skill": "meditation",
+      "value": 1000
+    },
+    {
+      "npcId": "npc.sera",
+      "skill": "resist",
+      "value": 1000
+    },
+    {
+      "npcId": "npc.elin",
+      "skill": "healing",
+      "value": 1000
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+**/bin/
+**/obj/
+artifacts/
+.runtime/
+__pycache__/
+*.user
+*.suo
+Saves/
+Backups/
+
+**/output/
+**/publish/
+vendor/ServUO/*.dll
+vendor/ServUO/*.exe
+vendor/ServUO/*.pdb
+
+# Release outputs and local player data
+/Runtime/
+/UserData/
+/ArtProof/
+*.log
+*.pdb
+.DS_Store
+/art/compiled/preview.html
+/art/compiled/contact-sheet.png
+/art/compiled/walk-proof.gif

@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "id": "greyhaven.art-proof",
+  "movement": {
+    "authority": "tile",
+    "directions": 8,
+    "presentation": "interpolated"
+  },
+  "license": "Original art; final game-content license not yet selected. Upstream licenses unchanged.",
+  "items": [
+    {
+      "id": "greyhaven.item.trail-hat",
+      "displayName": "Trail Hat",
+      "inventoryVisual": "hat-leather",
+      "groundVisual": "hat-leather",
+      "paperdollVisual": "hat-leather",
+      "equipment": {
+        "slot": "hat",
+        "variantValue": 1
+      }
+    },
+    {
+      "id": "greyhaven.item.wizard-hat",
+      "displayName": "Wizard Hat",
+      "inventoryVisual": "hat-wizard",
+      "groundVisual": "hat-wizard",
+      "paperdollVisual": "hat-wizard",
+      "equipment": {
+        "slot": "hat",
+        "variantValue": 2
+      }
+    },
+    {
+      "id": "greyhaven.item.iron-sword",
+      "displayName": "Iron Sword",
+      "inventoryVisual": "sword",
+      "groundVisual": "sword",
+      "paperdollVisual": "sword",
+      "equipment": {
+        "slot": "sword",
+        "variantValue": 1
+      }
+    },
+    {
+      "id": "greyhaven.item.round-shield",
+      "displayName": "Round Shield",
+      "inventoryVisual": "shield",
+      "groundVisual": "shield",
+      "paperdollVisual": "shield",
+      "equipment": {
+        "slot": "shield",
+        "variantValue": 1
+      }
+    },
+    {
+      "id": "greyhaven.item.healing-tonic",
+      "displayName": "Healing Tonic",
+      "inventoryVisual": "potion",
+      "groundVisual": "potion",
+      "paperdollVisual": "potion",
+      "equipment": null
+    },
+    {
+      "id": "greyhaven.item.silver-marks",
+      "displayName": "Silver Marks",
+      "inventoryVisual": "coins",
+      "groundVisual": "coins",
+      "paperdollVisual": "coins",
+      "equipment": null
+    },
+    {
+      "id": "greyhaven.item.tide-crystal",
+      "displayName": "Tide Crystal",
+      "inventoryVisual": "crystal",
+      "groundVisual": "crystal",
+      "paperdollVisual": "crystal",
+      "equipment": null
+    },
+    {
+      "id": "greyhaven.item.sealed-scroll",
+      "displayName": "Sealed Scroll",
+      "inventoryVisual": "scroll",
+      "groundVisual": "scroll",
+      "paperdollVisual": "scroll",
+      "equipment": null
+    }
+  ],
+  "spells": [
+    {
+      "id": "greyhaven.spell.dawn",
+      "icon": "spell-dawn",
+      "displayName": "Dawn",
+      "implementedRules": false
+    },
+    {
+      "id": "greyhaven.spell.storm",
+      "icon": "spell-storm",
+      "displayName": "Storm",
+      "implementedRules": false
+    },
+    {
+      "id": "greyhaven.spell.ember",
+      "icon": "spell-ember",
+      "displayName": "Ember",
+      "implementedRules": false
+    },
+    {
+      "id": "greyhaven.spell.renew",
+      "icon": "spell-renew",
+      "displayName": "Renew",
+      "implementedRules": false
+    },
+    {
+      "id": "greyhaven.spell.ward",
+      "icon": "spell-ward",
+      "displayName": "Ward",
+      "implementedRules": false
+    },
+    {
+      "id": "greyhaven.spell.venom",
+      "icon": "spell-venom",
+      "displayName": "Venom",
+      "implementedRules": false
+    },
+    {
+      "id": "greyhaven.spell.bind",
+      "icon": "spell-bind",
+      "displayName": "Bind",
+      "implementedRules": false
+    },
+    {
+      "id": "greyhaven.spell.gate",
+      "icon": "spell-gate",
+      "displayName": "Gate",
+      "implementedRules": false
+    }
+  ],
+  "runtimeNote": "This manifest establishes visual identities. Proof interaction models use local state; the Phase 2+ content provider will load these definitions authoritatively."
+}

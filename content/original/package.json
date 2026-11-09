@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "greyhaven.original",
+  "version": "0.8.0",
+  "compatibleFingerprints": [
+    "b8b3c1badd104e5e4e7783d056b49ec3de803760583061325436209e2dfa2b20",
+    "4e9056c6a8bcb7c5b8766ca0cc0f516e03895173e635006d2607dec2b4b83079",
+    "e62670b9ac91f8afbed38734a61c9f89ae29863ab66054b55b1efdf0958e92eb",
+    "01468f2e1e814f2fe6623c5866e616b7cfebb1b55475895a7f53369001be7bba",
+    "44431d14bbee9637e356634c70724aaf9349eb31e8624aa1d0e33413c7fddb55"
+  ],
+  "adventure": "content/original/adventure.json",
+  "titleKey": "game.title",
+  "definitions": "content/original/definitions.json",
+  "map": "content/original/map.json",
+  "text": "content/original/text.en.json",
+  "audio": "content/original/audio.json",
+  "visuals": "art/compiled/manifest.json",
+  "integrity": "content/original/assets.json",
+  "movement": {
+    "authority": "tile",
+    "directions": 8,
+    "interpolationMilliseconds": 200,
+    "maxStepHeight": 2
+  },
+  "legacyFallback": false
+}

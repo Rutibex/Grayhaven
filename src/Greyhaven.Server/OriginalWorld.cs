@@ -1,0 +1,35 @@
+// GPL-2.0: this adapter links ServUO's map, tile and collision implementation.
+using Greyhaven.Content;
+using Server;
+namespace Greyhaven.Server;
+public sealed class OriginalWorld {
+ public ContentPackage Package {get;}public Map EngineMap {get;}public SessionState State {get;private set;}readonly Dictionary<string,ItemDefinition> items;readonly Dictionary<(int,int),LandTile[]> land=[];readonly Dictionary<(int,int),StaticTile[][][]> statics=[];DateTime lastStep=DateTime.MinValue;
+ public OriginalWorld(ContentPackage p){Package=p;items=p.Definitions.Items.ToDictionary(x=>x.Id);var ld=new LandData[0x4000];var sd=new ItemData[0x10000];
+  foreach(var d in p.Definitions.Terrain)ld[d.NumericId]=new LandData(p.Localize(d.NameKey),Flags(d));foreach(var d in p.Definitions.Statics)sd[d.NumericId]=new ItemData(p.Localize(d.NameKey),Flags(d),0,0,0,0,d.Height);
+  OriginalContentBridge.Install(ld,sd,LandBlock,StaticBlock);TileMatrixPatch.Enabled=false;Core.DataDirectories.Clear();EngineMap=new Map(0,0,127,p.Map.Width,p.Map.Height,0,p.Localize(p.Map.NameKey),MapRules.FeluccaRules);Map.Maps[0]=EngineMap;
+  State=new(){X=p.Map.Spawn.X,Y=p.Map.Spawn.Y,Z=p.Map.Spawn.Z};int i=0;
+  foreach(var d in p.Definitions.Items.Where(d=>d.ContainerSlots==0&&!d.Id.EndsWith("mariner-greatblade")&&!d.Id.EndsWith("bandage"))){State.Items.Add(new WorldItem{Id="reach.item."+i,Definition=d.Id,Where=d.Equipment!=null&&d.Equipment.VariantValue==1?"equipped":"bag",X=55+(i%3)*55,Y=125+(i/3)*55});i++;}
+  InventoryTransactions.Initialize(p,State);InventoryRules.Validate(p,State);WorldSimulation.Initialize(p,State);CombatSimulation.Initialize(p,State);AdventureSimulation.Initialize(p,State);CombatRules.Validate(p,State);VerifyEngineView();
+ }
+ static TileFlag Flags(Definition d)=>(d.Impassable?TileFlag.Impassable:0)|(d.Surface?TileFlag.Surface:0)|(d.Wet?TileFlag.Wet:0);
+ LandTile[] LandBlock(int bx,int by){if(land.TryGetValue((bx,by),out var cached))return cached;var cells=new LandTile[64];for(int y=0;y<8;y++)for(int x=0;x<8;x++){var c=Package.Map.Get(bx*8+x,by*8+y);cells[y*8+x]=new LandTile((short)Package.Terrain[c.Terrain].NumericId,(sbyte)c.Z);}land[(bx,by)]=cells;return cells;}
+ StaticTile[][][] StaticBlock(int bx,int by){if(statics.TryGetValue((bx,by),out var cached))return cached;var block=new StaticTile[8][][];for(int x=0;x<8;x++){block[x]=new StaticTile[8][];for(int y=0;y<8;y++)block[x][y]=Package.Map.ObjectsAt(bx*8+x,by*8+y).Select(p=>new StaticTile((ushort)Package.Statics[p.Definition].NumericId,(sbyte)p.Z)).ToArray();}statics[(bx,by)]=block;return block;}
+ public void VerifyEngineView(){for(int y=0;y<Package.Map.Height;y++)for(int x=0;x<Package.Map.Width;x++){var c=Package.Map.Get(x,y);var t=EngineMap.Tiles.GetLandTile(x,y);if(t.ID!=Package.Terrain[c.Terrain].NumericId||t.Z!=c.Z)throw new ContentException("ServUO terrain/elevation adapter mismatch.");if(EngineMap.Tiles.GetStaticTiles(x,y).Length!=Package.Map.ObjectsAt(x,y).Count)throw new ContentException("ServUO static adapter mismatch.");}}
+ public bool CanStep(int x,int y,int dx,int dy){if(!Package.CanStep(Package.Map,x,y,dx,dy)||WorldAuthoring.Blocks(Package,State,x+dx,y+dy)||dx!=0&&dy!=0&&(WorldAuthoring.Blocks(Package,State,x+dx,y)||WorldAuthoring.Blocks(Package,State,x,y+dy)))return false;int nx=x+dx,ny=y+dy,z=Package.Map.Get(nx,ny).Z;
+  // ServUO owns static collision. Flat cells use its full surface-aware CanFit check.
+  // The shared slope rule handles original two-unit corner transitions where legacy averaged-Z semantics differ.
+  return EngineMap.Tiles.GetStaticTiles(nx,ny).All(t=>{var d=TileData.ItemTable[t.ID];return !d.Impassable||t.Z+d.Height<=z||t.Z>=z+16;})&&(EngineMap.GetAverageZ(nx,ny)!=z||EngineMap.CanFit(nx,ny,z,16,false,false,true));
+ }
+ public void Restore(CampaignSave save){CampaignStore.Validate(Package,save);State=System.Text.Json.JsonSerializer.Deserialize<SessionState>(Wire.Encode(save.State),ContentPackage.Json)!;InventoryTransactions.Initialize(Package,State,true);InventoryRules.Validate(Package,State);WorldSimulation.Initialize(Package,State);CombatSimulation.Initialize(Package,State);AdventureSimulation.Initialize(Package,State);CombatRules.Validate(Package,State);State.Paused=true;lastStep=DateTime.MinValue;}
+ public void Advance(double dt){double before=State.ElapsedSeconds;CombatSimulation.Advance(Package,State,dt,CanStep);AdventureSimulation.Advance(Package,State,State.ElapsedSeconds-before);}
+ public Reply Handle(Command c){if(AdventureSimulation.Handles(c.Type)){try{var result=AdventureSimulation.Apply(Package,State,c);State=result.state;AdventureSimulation.Evaluate(Package,State);return new(){Type="state",Ok=true,Message=result.message,State=State};}catch(ContentException e){return new(){Type="state",Message=e.Message,State=State};}}if(c.Type=="interact"){try{var result=WorldSimulation.Interact(Package,State,c);State=result.state;AdventureSimulation.Talk(Package,State,c.TargetId);return new(){Type="state",Ok=true,Message=result.message,State=State};}catch(ContentException e){return new(){Type="state",Message=e.Message,State=State};}}if(CombatSimulation.Handles(c,State)){try{var result=CombatSimulation.Apply(Package,State,c);State=result.state;AdventureSimulation.Evaluate(Package,State);return new(){Type="state",Ok=true,Message=result.message,State=State};}catch(ContentException e){return new(){Type="state",Message=e.Message,State=State};}}if(InventoryTransactions.Handles(c.Type)){try{var result=InventoryTransactions.Apply(Package,State,c);State=result.state;AdventureSimulation.Evaluate(Package,State);return new(){Type="state",Ok=true,Message=result.message,State=State};}catch(ContentException e){return new(){Type="state",Message=e.Message,State=State};}}if(State.Paused&&c.Type is "step" or "transfer")return new(){Type="state",Message="Campaign paused.",State=State};bool ok=false;string message;
+  if(c.Type=="step"){
+   if(State.Combat.Dead&&!State.Adventure.Enabled)message="You have fallen. Recover at camp.";
+   else if(State.Combat.Status.RootUntil>State.ElapsedSeconds)message="You are rooted.";
+   else if((DateTime.UtcNow-lastStep).TotalMilliseconds<190)message="Wait for the current tile step.";
+   else if(!CanStep(State.X,State.Y,c.Dx,c.Dy)||State.Combat.Enemies.Any(e=>e.Health>0&&e.X==State.X+c.Dx&&e.Y==State.Y+c.Dy))message="The way is blocked.";
+   else{CombatSimulation.Interrupt(State);ProgressionSimulation.Stop(State);State.X+=c.Dx;State.Y+=c.Dy;State.Z=Package.Map.Get(State.X,State.Y).Z;State.Facing=(c.Dx,c.Dy) switch{(-1,-1)=>0,(0,-1)=>1,(1,-1)=>2,(1,0)=>3,(1,1)=>4,(0,1)=>5,(-1,1)=>6,_=>7};lastStep=DateTime.UtcNow;if(!State.Combat.Dead)WorldSimulation.Enter(Package,State);AdventureSimulation.Evaluate(Package,State);ok=true;message="Step accepted.";}
+  }else if(c.Type=="poll"){return new(){Type="snapshot",Ok=true,State=State};}else if(c.Type=="ping"){ok=true;message="Original world ready.";}else message="Unsupported command.";
+  if(ok&&c.Type!="ping")State.Revision++;return new(){Type="state",Ok=ok,Message=message,State=State};
+ }
+}

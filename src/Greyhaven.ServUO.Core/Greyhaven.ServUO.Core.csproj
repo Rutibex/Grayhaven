@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<PropertyGroup><TargetFramework>net10.0</TargetFramework><EnableDefaultCompileItems>false</EnableDefaultCompileItems><AllowUnsafeBlocks>true</AllowUnsafeBlocks><GenerateAssemblyInfo>false</GenerateAssemblyInfo><NoWarn>$(NoWarn);CA1416;SYSLIB0021;SYSLIB0003;SYSLIB0051;CS0618</NoWarn><DefineConstants>TRACE;NEWTIMERS;ServUO;GREYHAVEN</DefineConstants></PropertyGroup>
+<ItemGroup><Compile Include="../../vendor/ServUO/Server/**/*.cs" Exclude="../../vendor/ServUO/Server/obj/**/*.cs;../../vendor/ServUO/Server/bin/**/*.cs"/><Compile Include="../../vendor/ServUO/Ultima/**/*.cs" Exclude="../../vendor/ServUO/Ultima/AssemblyInfo.cs;../../vendor/ServUO/Ultima/obj/**/*.cs;../../vendor/ServUO/Ultima/bin/**/*.cs"/></ItemGroup>
+<ItemGroup><PackageReference Include="System.Diagnostics.EventLog" Version="10.0.0"/><PackageReference Include="System.Diagnostics.PerformanceCounter" Version="10.0.0"/><PackageReference Include="System.CodeDom" Version="10.0.0"/><PackageReference Include="System.Drawing.Common" Version="10.0.0"/></ItemGroup>
+</Project>
